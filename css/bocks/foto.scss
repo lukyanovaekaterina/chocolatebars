@@ -1,0 +1,23 @@
+.foto__pic{
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+}
+
+.foto__icon{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto__pic:hover{
+  border: 5px solid #0f5a47;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.foto_item{
+  padding: 18px;
+}

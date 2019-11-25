@@ -1,0 +1,27 @@
+// blocks
+@import "bocks/header.scss";
+@import "bocks/nav.scss";
+@import "bocks/promo.scss";
+@import "bocks/why.scss";
+@import "bocks/rewiews.scss";
+@import "bocks/thumb.scss";
+@import "bocks/btn.scss";
+@import "bocks/contacts.scss";
+@import "bocks/logo.scss";
+@import "bocks/features.scss";
+@import "bocks/foto.scss";
+@import "bocks/scroll.scss";
+
+//colors
+$blue: #61c4d9;
+$green: #0f5a47;
+$black: #0d0d0d;
+$grey: #f2f5f4;
+$white: #fff;
+  
+//normalize
+@import "layout/normalize.scss";
+  
+//layout
+@import "layout/base.scss";
+@import "layout/font.scss";

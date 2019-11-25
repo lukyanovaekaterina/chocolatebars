@@ -1,0 +1,20 @@
+.thumb__list{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+width: 55%;
+padding: 0px;
+margin-top: 66px;
+}
+  
+.thumb__link{
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: #ffffff;
+  justify-content: space-around;
+}
+
+.thumb__image{
+  padding-right: 10px;
+}

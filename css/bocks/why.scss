@@ -1,0 +1,43 @@
+.why {
+  background: url(./../../img/bg/why.png);
+  background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+  height: 100vh;
+  position: relative;
+  height: 100vh;
+}
+
+.why__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.why__title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 55%;
+  margin-bottom: 56px;
+}
+
+.why__heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.why__message{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #666666;
+}
