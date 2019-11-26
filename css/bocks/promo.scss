@@ -1,5 +1,5 @@
 .promo {
-background: url(./../../img/bg/first.png);
+background: url(./../../img/bg/promo.png);
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center center;
@@ -9,14 +9,15 @@ height: 100vh;
 
 .promo__container{
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  height: 100%;
 }
 
 .promo__content{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 160px;
+  margin-top: 150px;
   max-width: 100%;
   height: auto;
   width: 50%;
@@ -24,6 +25,9 @@ height: 100vh;
 
 .promo__message{
   font-size: 21px;
+  font-weight: 100;
+  font-stretch: semi-condensed;
+  width: 80%;
 }
 
 .promo__title{
@@ -31,13 +35,22 @@ height: 100vh;
   flex-direction: column;
   height: auto;
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 48px;
 }
 
 .promo__heading{
   display: flex;
-  font-size: 60px;
+  font-size: 56px;
   font-weight: 600;
   text-transform: uppercase;
   height: auto;
+}
+
+.promo__img{
+ display: flex;
+ justify-content: flex-end;
+ width: 500px;
+ height: 500px;
+ margin-top: 50px;
+ padding-left: 55px;
 }

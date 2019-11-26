@@ -12,6 +12,7 @@ background-position: center center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100%;
 }
 
 .reviews__heading{
@@ -35,6 +36,7 @@ background-position: center center;
   width: 250px;
   height: 260px;
   padding-right: 20px;
+  object-fit: cover;
 }
 
 .reviews__subtitle_text{
