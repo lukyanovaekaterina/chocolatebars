@@ -45,10 +45,10 @@
   color: #ffffff; }
 
 .promo {
-  background: url(./../../img/bg/promo.png);
+  background: url(./../../img/bg/scheet2.png), url(./../../img/bg/scheet.png), url(./../../img/bg/bars.png), url(./../../img/bg/promo.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background-size: 76px 106px, 500px 370px, 500px 500px, cover;
+  background-position: left bottom, right bottom, right center, center center;
   position: relative;
   height: 100vh;
   -webkit-box-pack: center;
@@ -59,10 +59,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
   height: 100%;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -111,17 +107,10 @@
   text-transform: uppercase;
   height: auto; }
 
-.promo__img {
+.promo__icon {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  width: 500px;
-  height: 500px;
-  margin-top: 50px;
-  padding-left: 55px; }
+  display: flex; }
 
 .why {
   background: url(./../../img/bg/why.png);

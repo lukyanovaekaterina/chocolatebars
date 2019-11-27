@@ -1,8 +1,8 @@
 .promo {
-background: url(./../../img/bg/promo.png);
+background:url(./../../img/bg/scheet2.png), url(./../../img/bg/scheet.png), url(./../../img/bg/bars.png), url(./../../img/bg/promo.png);
 background-repeat: no-repeat;
-background-size: cover;
-background-position: center center;
+background-size: 76px 106px, 500px 370px, 500px 500px, cover;
+background-position:left bottom, right bottom, right center, center center;
 position: relative;
 height: 100vh;
 justify-content: center;
@@ -10,7 +10,6 @@ justify-content: center;
 
 .promo__container{
   display: flex;
-  flex-direction: row-reverse;
   height: 100%;
   align-items: center;
 }
@@ -48,11 +47,6 @@ justify-content: center;
   height: auto;
 }
 
-.promo__img{
- display: flex;
- justify-content: flex-end;
- width: 500px;
- height: 500px;
- margin-top: 50px;
- padding-left: 55px;
+.promo__icon{
+  display: flex;
 }
