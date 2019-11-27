@@ -5,12 +5,14 @@ background-size: cover;
 background-position: center center;
 position: relative;
 height: 100vh;
+justify-content: center;
 }
 
 .promo__container{
   display: flex;
   flex-direction: row-reverse;
   height: 100%;
+  align-items: center;
 }
 
 .promo__content{
