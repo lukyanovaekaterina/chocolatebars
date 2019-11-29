@@ -1,0 +1,20 @@
+.menu{
+  background: url(./../../img/bg/menu.png);
+  background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+  height: 100vh;
+  position: relative;
+}
+
+.menu-accordion{
+  position: absolute;
+  height: 100%;
+  right: 0;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+.menu-accordion__link{
+  text-decoration: none;
+}
