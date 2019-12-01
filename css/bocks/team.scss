@@ -33,6 +33,7 @@
   flex-direction: column;
   align-items: center;
   padding-left: 20px;
+  width: 25%;
 }
 
 .team__pic{
@@ -42,7 +43,7 @@
 .accordion__team{
   position: relative;
   justify-content: center;
-  padding: 0px;
+  padding-top: 24px;
 }
 .accordion__team:hover .accordion__child{
 opacity: 1;
@@ -52,14 +53,15 @@ opacity: 1;
 .accordion__label-team{
 display: flex;
 justify-content: center;
-}
-
-.accordion__team:hover .accordion__label-team{
-color: yellow;
+font-size: 20.98px;
+font-weight: 600;
 }
 
 .accordion__child{
-  position: absolute;
+  /*position: absolute;*/
+  display: flex;
+  text-align: center;
+  flex-direction: column;
     background: #fff;
     padding: 0px;
     width: 100%;
@@ -72,4 +74,8 @@ color: yellow;
     left: 0;
     right: 0;
     position: absolute;
+}
+
+.accordion__position{
+  font-size: 18px;
 }

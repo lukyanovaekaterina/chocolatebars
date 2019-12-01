@@ -101,32 +101,36 @@
             </h6>
           </div>
           <div class="form__buttons">
-            <a href="###" class="btn">заказать</a>
+            <a href="#" class="btn">заказать</a>
           </div>
               <ul class="thumb__list">
                 <li class="thumb__item">
-                    <img src="./img/icon/Иконка 1.png" alt="Контур листьев" class="thumb__image" />
+                    <svg class="promo__icon">
+                      <use xlink:href="./sprite.svg#leaf">
+                      </use>
+                    </svg>
                     <span>100% натуральный продукт</span>
                   </a>
                 </li>
                 <li class="thumb__item">
-                    <img src="./img/icon/иконка2.png" alt="Фургончик с часами" class="thumb__image" />
+                  <svg class="promo__icon">
+                    <use xlink:href="./sprite.svg#auto">
+                    </use>
+                    </svg>
                     <span>3-5 дней доставка по РФ</span>
                   </a>
                 </li>
                 <li class="thumb__item">
-                    <img
-                      src="./img/icon/Иконка3.png"
-                      alt="Сантиметровая лента"
-                      class="thumb__image"
-                    />
+                  <svg class="promo__icon">
+                    <use xlink:href="./sprite.svg#centimetr">
+                    </use>
+                    </svg>
                     <span>Не портит фигуру</span>
                   </a>
                 </li>
               </ul>
         </div>
-        </div>
-      
+       </div>
       </section>
 
       <section class="why">
@@ -144,11 +148,10 @@
            <ul class="features__list">
               <li class="features__item">
                   <div class="icon__box">
-                    <img
-                      src="./img/icon/человечек.png"
-                      alt="Человечек"
-                      class="features__icon"
-                    />
+                    <svg class="features__icon">
+                      <use xlink:href="./sprite.svg#man">
+                      </use>
+                    </svg>
                   </div>
                   <h5 class="features__subtitle_text">Полезно</h5>
                   <p class="features__message">
@@ -157,11 +160,10 @@
               </li>
               <li class="features__item">
                   <div class="icon__box">
-                        <img
-                          src="./img/icon/смайлик.png"
-                          alt="Смайлик"
-                          class="features__icon"
-                        />
+                    <svg class="features__icon">
+                      <use xlink:href="./sprite.svg#smail">
+                      </use>
+                    </svg>
                   </div>
                   <h5 class="features__subtitle_text">Вкусно</h5>
                    <p class="features__message">
@@ -170,11 +172,10 @@
               </li>
               <li class="features__item">
                     <div class="icon__box">
-                        <img
-                              src="./img/icon/бицепс.png"
-                              alt="Картинка бицепса"
-                              class="features__icon"
-                            />
+                      <svg class="features__icon">
+                        <use xlink:href="./sprite.svg#biceps">
+                        </use>
+                      </svg>
                     </div>
                     <h5 class="features__subtitle_text">Питательно</h5>
                     <p class="features__message">
@@ -194,7 +195,7 @@
           <div class="team__list">
             <li class="team__item">
               <img 
-              src="./img/Foto/Борис.png"
+              src="./img/Foto/Борис.jpg"
               alt="Фото Бориса"
               class="team__pic">
               <div class="accordion__team">
@@ -209,7 +210,7 @@
             </li>
             <li class="team__item">
                 <img 
-                src="./img/Foto/Алла.png"
+                src="./img/Foto/Алла.jpg"
                 alt="Фото Аллы"
                 class="team__pic">
                 <div class="accordion__team">
@@ -224,11 +225,11 @@
             </li>
             <li class="team__item">
                     <img 
-                    src="./img/Foto/Кирил.png"
+                    src="./img/Foto/Кирил.jpg"
                     alt="Фото Кирилла"
                     class="team__pic">
                     <div class="accordion__team">
-                        <label class="accordion__label-team">Кирилл Рожков</label>
+                        <label class="accordion__label-team">Кирилл Матросов</label>
                         <ul class="accordion__child">
                             <h5 class="accordion__position">Оператор</h5>
                             <p>
@@ -239,7 +240,7 @@
              </li>
                     <li class="team__item">
                         <img 
-                        src="./img/Foto/Мила.png"
+                        src="./img/Foto/Мила.jpg"
                         alt="Фото Милы"
                         class="team__pic">
                         <div class="accordion__team">
@@ -261,8 +262,8 @@
         <div class="menu-accordion">
         <ul class="menu-accordion__list">
           <li class="menu-accordion__item menu-accordion--activ">
-            <a href="#" class="menu-accordion__link">
-              <img src="img/bg/Milk.png" alt="Фото половинки какоса" class="menu-accordion__image" >
+            <a href="#" class="menu-accordion__link menu-accordion__link-milk">
+                <img class=menu-accordion__image src="img/bg/Milk.png">
               <h2 class="menu-accordion__title">Батончики с молоком
               </h2>
             </a>
@@ -272,24 +273,24 @@
                 </p>
           </li>
           <li class="menu-accordion__item">
-              <a href="#" class="menu-accordion__link">
-                  <img src="img/bg/Milk.png" alt="Фото половинки какоса" class="menu-accordion__image" >
+              <a href="#" class="menu-accordion__link menu-accordion__link-milk">
+                  <img class=menu-accordion__image src="img/bg/Milk.png">
                 <h2 class="menu-accordion__title">
                   Батончики с молоком
                 </h2>
               </a>
             </li>
             <li class="menu-accordion__item">
-                <a href="#" class="menu-accordion__link">
-                  <img src="img/bg/honey.png" alt="Фото батончика зернового" class="menu-accordion__image" >
+                <a href="#" class="menu-accordion__link menu-accordion__link-honey">
+                    <img class=menu-accordion__image src="img/bg/honey.png">
                   <h2 class="menu-accordion__title">
                     С медом и фруктами
                   </h2>
                 </a>
               </li>
               <li class="menu-accordion__item">
-                  <a href="#" class="menu-accordion__link">
-                    <img src="img/bg/berrymenu.png" alt="Фото черники" class="menu-accordion__image" >
+                  <a href="#" class="menu-accordion__link menu-accordion__link-berry">
+                    <img class=menu-accordion__image src="img/bg/berrymenu.png">
                     <h2 class="menu-accordion__title">
                       Дикие ягоды
                     </h2>
@@ -306,7 +307,7 @@
         </div>
         <div class="reviews__item">
             <img
-            src="./img/Foto/Anna.png"
+            src="./img/Foto/Anna.jpg"
             alt="Фотография пользователя"
             class="reviews__pic"
           />
@@ -325,21 +326,21 @@
         <ul class="reviews__icon">
             <li class="reviews__foto_item">
                 <img
-                  src="./img/Foto/Anna.png"
+                  src="./img/Foto/Anna.jpg"
                   alt="Фото Анны"
                   class="reviews__foto_pic"
                 />
            </li>
            <li class="reviews__foto_item">
               <img
-                src="./img/Foto/Vadim.png"
+                src="./img/Foto/Vadim.jpg"
                 alt="Фото Вадима"
                 class="reviews__foto_pic"
               />
          </li>
          <li class="reviews__foto_item">
             <img
-              src="./img/Foto/Maria.png"
+              src="./img/Foto/Maria.jpg"
               alt="Фото Марии"
               class="reviews__foto_pic"
             />
@@ -372,9 +373,38 @@
                         8 800 903 90 90</a>
                   </div>
                 </div>
-                <a href="afrodita.html" class="logo">АФРОДИТА</a>
+                <div class="socials">
+                  <h5 class="social__title">Наши социальные сети</h5>
+                  <ul class="social__list">
+                    <li class="social__item">
+                     <svg class="social__icon">
+                       <use xlink:href="./sprite.svg#vk">
+                       </use>
+                     </svg>
+                    </li>
+                    <li class="social__item">
+                        <svg class="social__icon">
+                            <use xlink:href="./sprite.svg#f">
+                            </use>
+                        </svg>
+                    </li>
+                    <li class="social__item">
+                        <svg class="social__icon">
+                            <use xlink:href="./sprite.svg#in">
+                            </use>
+                        </svg> 
+                    </li>
+                    <li class="social__item">
+                        <svg class="social__icon">
+                            <use xlink:href="./sprite.svg#tv">
+                            </use>
+                          </svg> 
+                    </li>
+                  </ul>
+                </div>
+             
               </div>
             </div>
-      </footer>
+    </footer>
 </body>
 </html>
