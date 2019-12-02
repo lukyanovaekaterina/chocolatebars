@@ -6,7 +6,7 @@
 .features__list{
   display: flex;
   padding: 0;
-  margin-top: 40px;
+  margin-top: 2.5rem;
   margin-bottom: 0px;
 }
 
@@ -14,12 +14,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-right: 10px;
+  padding-right: 0.625rem;
 }
 
 .features__subtitle_text{
   font-size: 27px;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .features__message{
@@ -32,18 +32,32 @@
 
 .icon__box{
   display: flex;
-  width: 124px;
-  height: 124px;
+  width: 7.75rem;
+  height: 7.75rem;
   border-radius: 50%;
   background: #f2f5f4;
   align-items: center;
   justify-content: center;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 
 .features__icon{
   fill: none;
   stroke: #2a2a29;
-  width: 70px;
-  height: 70px;
+  width: 4.375rem;
+  height: 4.375rem;
+}
+
+@media (max-width: 768px){
+  .features__list{
+    flex-direction: column;
+    width: auto;
+}
+}
+
+@media (max-width: 480px){
+  .features__list {
+    flex-direction: column;
+    width: auto;
+}
 }

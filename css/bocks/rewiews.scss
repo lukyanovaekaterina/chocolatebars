@@ -1,7 +1,7 @@
 .reviews {
   background: url(./../../img/bg/reviews.png);
   background-repeat: no-repeat;
-background-size: cover;
+  background-size: cover;
 background-position: center center;
   height: 100vh;
   position: relative;
@@ -19,30 +19,30 @@ background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 48px;
+  font-size: 3rem;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .reviews__item{
   display: flex;
   justify-content: center;
   flex-direction: row;
-  background-color: #f8fafa;
-  padding: 50px 20px 36px 48px;
+  background-color:  #f8faf9;
+  padding: 3.125rem 1.25rem 2.25rem 3rem;
 }
 
 .reviews__pic{
-  width: 250px;
-  height: 260px;
-  padding-right: 20px;
+  width: 15.625rem;
+  height: 16.25rem;
+  padding-right: 1.25rem;
   object-fit: cover;
 }
 
 .reviews__subtitle_text{
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 500;
-  padding-bottom: 30px;
+  padding-bottom: 1.875rem;
 }
 
 .reviews__desc{
@@ -50,13 +50,13 @@ background-position: center center;
 }
 
 .reviews__name{
-  font-size: 17.98px;
+  font-size: 1.12rem;
   font-weight: 500;
-  padding-top: 30px;
+  padding-top: 1.875rem;
   color: #666666;
 }
 
 .reviews__message{
-  font-size: 17.98px;
+  font-size: 1.12rem;
   color: #666666;
 }

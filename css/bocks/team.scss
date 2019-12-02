@@ -1,8 +1,8 @@
 .team{
   background: url(./../../img/bg/berryteam.png), url(./../../img/bg/team.png);
   background-repeat: no-repeat;
- background-size: 110px 110px, cover;
- background-position:left bottom, center center;
+  background-size: 6.875rem 6.875rem, cover;
+  background-position:left bottom, center center;
   height: 100vh;
   position: relative;
 }
@@ -11,7 +11,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
   align-items: center;
 }
 
@@ -19,21 +18,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 48px;
+  font-size: 3rem;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .team__list{
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: -1.25rem;
+  padding: 0;
 }
 
 .team__item{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 20px;
-  width: 25%;
+  width: calc(100% / 4 - 1.25rem);
+  margin-left: 1.25rem;
+  object-fit: cover;
 }
 
 .team__pic{
@@ -43,7 +45,8 @@
 .accordion__team{
   position: relative;
   justify-content: center;
-  padding-top: 24px;
+  padding-top: 1.5rem;
+  align-items: center;
 }
 .accordion__team:hover .accordion__child{
 opacity: 1;
@@ -78,4 +81,23 @@ font-weight: 600;
 
 .accordion__position{
   font-size: 18px;
+}
+
+@media (max-width: 768px){
+  .team__item {
+    width: calc(100% / 2 - 20px);
+  }
+  .team__pic{
+    width: calc( 100% - 1.25rem);
+  }
+}
+
+@media (max-width: 480px){
+  .team__item {
+    width: calc(100% / 2 - 10px);
+  }
+  .team__pic{
+    width: calc( 100% - 1.25rem);
+  }
+  
 }

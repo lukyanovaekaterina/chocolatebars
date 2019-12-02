@@ -5,13 +5,11 @@ background-size: cover;
 background-position: center center;
   height: 100vh;
   position: relative;
-  height: 100vh;
 }
 
 .why__container{
   display: flex;
   flex-direction: column;
-  height: 100%;
   align-items: center;
 }
 
@@ -35,21 +33,40 @@ background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 48px;
+  font-size: 3rem;
   font-stretch: semi-condensed;
   font-weight: 700;
   font-style: normal;
   font-family: sans-serif;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .why__message{
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
   font-stretch: semi-condensed;
   color: #666666;
+}
+
+@media (max-width: 768px){
+  .why__content{
+    justify-content: center;
+  }
+  .why__title{
+    width: auto;
+  }
+}
+
+@media (max-width: 480px){
+  .why__content{
+    justify-content: center;
+    height: 100%;
+  }
+  .why__title{
+    width: auto;
+  }
 }

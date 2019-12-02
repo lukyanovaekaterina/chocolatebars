@@ -1,3 +1,7 @@
+html{
+  font-size: 16px;
+}
+
 html,
 body {
   width: 100%;
@@ -6,7 +10,7 @@ body {
 
   body {
     font-family: 'Alegreya', sans-serif;
-    font-size: 16px;
+    font-size: rem (16px);
     vertical-align: baseline;
   }
 
@@ -20,7 +24,8 @@ h6 {
   padding: 0; }
 
 .container {
-  width: 1100px;
+  width: auto;
+  max-width: 1100px;
   margin: 0 auto;
  }
 
@@ -48,4 +53,19 @@ li {
 
 .wrapper{
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  html {font-size: 14px;}
+  .container {max-width: 600px}
+  .map__container {width: 100%}
+  .team__item {
+    width: calc(100% / 2 - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  html {font-size: 12px;}
+  .container {max-width: 300px}
+  .map__container {width: 100%}
 }
