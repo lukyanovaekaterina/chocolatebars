@@ -18,3 +18,15 @@
   color: #0f5a47;
   text-decoration: none;
 }
+
+@media (max-width: 768px){
+.contacts{
+  display: none;
+}
+}
+  
+@media (max-width: 480px){
+  .contacts{
+    display: none;
+  }
+}
