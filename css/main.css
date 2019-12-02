@@ -54,7 +54,7 @@
     display: none; } }
 
 .promo {
-  background: url(./../../img/bg/scheet2.png), url(./../../img/bg/scheet.png), url(./../../img/bg/Батончики.png), url(./../../img/bg/promo.jpg);
+  background: url(./../../img/bg/scheet2.png), url(./../../img/bg/scheet.png), url(./../../img/bg/Батончики.png), url(/img/bg/promo.jpg);
   background-repeat: no-repeat;
   background-size: 4.75rem 6.625rem, 31.25rem 23.125rem, 31.25rem 31.25rem, cover;
   background-position: 0% 100%, right bottom, right center, center center;
@@ -956,7 +956,7 @@
 .menu-gamburger__content {
   display: none; }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .menu-gamburger__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1373,7 +1373,56 @@ li {
   .map__container {
     width: 100%; }
   .team__item {
-    width: calc(100% / 2 - 20px); } }
+    width: calc(100% / 2 - 20px); }
+  .menu-gamburger__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .menu-gamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .gamburger__icon:hover .gamburger__list {
+    opacity: 1; }
+  .gamburger__icon {
+    stroke: white;
+    fill: white;
+    height: 1.625rem;
+    width: 1.625rem; }
+  .gamburger__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: #fff;
+    padding: 0px;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: opacity .4s;
+    -o-transition: opacity .4s;
+    transition: opacity .4s; }
+  .gamburger__list:before {
+    content: "";
+    display: block;
+    left: 0;
+    right: 0;
+    position: absolute; }
+  .contacts {
+    display: none; } }
 
 @media (max-width: 480px) {
   html {
