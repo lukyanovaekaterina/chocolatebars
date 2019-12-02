@@ -9,8 +9,7 @@
 
 .nav__list{
   display: flex;
-  justify-content: space-between;
-  padding: 0px;
+  flex-direction: row;
 }
 
 .nav__item{
@@ -21,4 +20,16 @@
 .nav_link{
   text-decoration: none;
   color: #ffffff;
+}
+
+@media (max-width: 768px){
+.nav{
+  display: none;
+}
+}
+
+@media (max-width: 480px){
+  .nav{
+    display: none;
+  }
 }
