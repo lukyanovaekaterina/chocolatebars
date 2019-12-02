@@ -54,7 +54,7 @@
     display: none; } }
 
 .promo {
-  background: url(./../../img/bg/scheet2.png), url(./../../img/bg/scheet.png), url(./../../img/bg/Батончики.png), url(./../../img/bg/promo.jpg);
+  background: url(./../../img/bg/scheet2.png), url(./../../img/bg/scheet.png), url(./../../img/bg/Батончики.png), url(./../img/bg/promo.jpg);
   background-repeat: no-repeat;
   background-size: 4.75rem 6.625rem, 31.25rem 23.125rem, 31.25rem 31.25rem, cover;
   background-position: 0% 100%, right bottom, right center, center center;
