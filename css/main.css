@@ -760,7 +760,8 @@
     padding: 3.125rem 1.875rem;
     width: 27rem;
     color: white;
-    font-weight: 100; }
+    font-weight: 100;
+    background-color: rgba(0, 0, 0, 0.6); }
 
 .map {
   background: url(./../../img/bg/map.jpg);
