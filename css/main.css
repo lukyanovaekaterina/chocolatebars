@@ -69,7 +69,8 @@
     height: 100%;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    width: 1100px; }
   .promo__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -104,19 +105,18 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: absolute;
+    position: relative;
     -o-object-fit: cover;
     object-fit: cover;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    top: 3.125rem;
     right: 1.125rem;
     bottom: 20; }
   .promo__img2 {
     position: absolute;
-    top: 18.75rem;
+    top: 18rem;
     right: 0; }
 
 @media (max-width: 768px) {
@@ -131,9 +131,10 @@
   .promo__content {
     margin-top: 0px; }
   .promo__foto {
+    position: absolute;
     height: 40%;
-    left: 25%;
-    right: 25%; }
+    top: 7%;
+    right: 20%; }
   .promo__img1 {
     max-height: 100%; }
   .promo__img2 {
@@ -431,11 +432,15 @@
   align-items: center;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  color: #0f5a47; }
 
 .contacts__phone-footer {
   color: #0f5a47;
   text-decoration: none; }
+
+.contacts__icon-footer {
+  background: #0f5a47; }
 
 @media (max-width: 768px) {
   .contacts {
@@ -767,25 +772,25 @@
 
 .footer {
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  bottom: 0;
+  background: #ffffff;
+  padding-top: 1.625rem; }
+  .footer__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .footer__text {
+    width: 50%; }
 
-.footer__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
-
-.social__icon {
-  width: 1.25rem;
-  height: 1.25rem; }
-
-.socials {
+.social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -793,22 +798,43 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row; }
-
-.social__icon {
-  fill: gray;
-  stroke: gray;
-  width: 1.25rem;
-  height: 1.25rem; }
+  .social__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .social__item {
+    padding-left: 1.125rem; }
+  .social__icon {
+    fill: #b2b2b2;
+    stroke: #b2b2b2;
+    width: 1.25rem;
+    height: 1.25rem; }
+    .social__icon :hover {
+      fill: #000000;
+      stroke: #000000; }
 
 .form {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background: url(./../../img/bg/form.jpg);
-  height: 100vh; }
+  height: 100vh;
+  position: relative; }
+  .form__elem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
   .form__row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -872,7 +898,11 @@
   flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%; }
 
 .form__title {
   display: -webkit-box;
@@ -937,7 +967,7 @@
     -ms-flex-align: center;
     align-items: center; }
     .form__col {
-      width: 100%; } }
+      width: 80%; } }
 
 .menu-gamburger__content {
   display: none; }
@@ -1324,7 +1354,7 @@ h6 {
   padding: 0; }
 
 .container {
-  width: auto;
+  width: 1100px;
   margin: 0 auto;
   height: 100%; }
 

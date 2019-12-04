@@ -12,11 +12,16 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  color: #0f5a47;
 }
 
 .contacts__phone-footer{
   color: #0f5a47;
   text-decoration: none;
+}
+
+.contacts__icon-footer{
+  background: #0f5a47;
 }
 
 @media (max-width: 768px){

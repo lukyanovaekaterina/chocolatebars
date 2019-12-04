@@ -1,16 +1,25 @@
-.social__icon{
-width: 1.25rem;
-height: 1.25rem;
-}
-
-.socials{
+.social{
   display: flex;
   flex-direction: row;
-}
 
-.social__icon{
-  fill: gray;
-  stroke: gray;
+  &__list{
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__item{
+    padding-left: 1.125rem;
+  }
+
+&__icon{
+  fill: #b2b2b2;
+  stroke: #b2b2b2;
   width: 1.25rem;
   height: 1.25rem;
+
+  :hover{
+    fill: #000000;
+    stroke: #000000;
+  }
+}
 }

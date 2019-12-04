@@ -11,6 +11,7 @@ justify-content: center;
   display: flex;
   height: 100%;
   align-items: center;
+  width: 1100px;
 }
 
 &__content{
@@ -45,17 +46,16 @@ justify-content: center;
 
 &__foto{
   display: flex;
-  position: absolute;
+ position: relative;
   object-fit: cover;
   flex-direction: column;
-  top: 3.125rem ;
- right: 1.125rem;
+ right:  1.125rem;
  bottom: 20;
 }
 
 &__img2{
   position: absolute;
-  top: 18.75rem;
+  top: 18rem;
   right: 0;
 }
 }
@@ -72,9 +72,11 @@ justify-content: center;
     }
 
     &__foto{
+      position: absolute;
       height: 40%;
-      left:25%;
-      right: 25%;
+      top: 7%;
+      right: 20%;
+    
     }
 &__img1{
   max-height: 100%;
