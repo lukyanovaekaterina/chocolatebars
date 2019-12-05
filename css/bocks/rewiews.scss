@@ -60,3 +60,39 @@
   font-size: 1.12rem;
   color: #666666;
 }
+
+
+@media (max-width: 768px){
+
+}
+
+
+@media (max-width: 480px){
+.reviews{
+  &__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+  }
+
+  &__desc{
+    width: 100%;
+    text-align: center;
+  }
+  
+   &__pic{
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    width: 7.75rem;
+    height: 7.8rem;
+    margin-bottom: 1.25rem;
+  }
+
+  &__item{
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+}
