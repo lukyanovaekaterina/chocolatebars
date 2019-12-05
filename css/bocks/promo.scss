@@ -9,7 +9,6 @@ justify-content: center;
 
 &__container{
   display: flex;
-  height: 100%;
   align-items: center;
   width: 1100px;
 }
@@ -65,6 +64,7 @@ justify-content: center;
   .promo__container{
     display: flex;
     flex-direction: column-reverse;
+   
   }
   .promo{
     &__content{
@@ -78,14 +78,14 @@ justify-content: center;
       right: 20%;
     
     }
-&__img1{
+/*&__img1{
   max-height: 100%;
 }
 
 &__img2{
   max-height: 100%;
   top: 13.5rem;;
-}
+}*/
   }  
 .form__buttons{
   justify-content: center;
