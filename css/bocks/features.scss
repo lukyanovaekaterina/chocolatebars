@@ -32,8 +32,8 @@
 
 .icon__box{
   display: flex;
-  width: 7.75rem;
-  height: 7.75rem;
+  width: 6.94rem;
+  height: 6.94rem;
   border-radius: 50%;
   background: #f2f5f4;
   align-items: center;
@@ -53,11 +53,34 @@
     flex-direction: column;
     width: auto;
 }
+.features__subtitle_text{
+  margin-bottom: 1rem;
+}
 }
 
 @media (max-width: 480px){
+
   .features__list {
     flex-direction: column;
     width: auto;
 }
+.features__item{
+  flex-direction: row;
+  padding: 0;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.fetures__info{
+flex-direction: column;
+width: 100%;
+}
+.features__message{
+  text-align: left;
+}
+.icon__box{
+  margin-right: 0.8rem;
+  width: 35%;
+  margin-bottom: 0;
+}
+
 }
