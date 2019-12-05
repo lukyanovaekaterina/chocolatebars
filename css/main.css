@@ -281,7 +281,8 @@
   .why__content {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center;
+    width: 56%; }
   .why__title {
     width: auto; } }
 
