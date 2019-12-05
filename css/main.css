@@ -140,9 +140,9 @@
       margin-top: 0px; }
     .promo__foto {
       position: absolute;
-      height: 40%;
-      top: 7%;
-      right: 20%; }
+      height: 100%;
+      right: 15%;
+      top: 2%; }
   .form__buttons {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -244,7 +244,7 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 45%; }
+  width: 45vh; }
 
 .why__heading {
   display: -webkit-box;
@@ -371,6 +371,40 @@
 .reviews__message {
   font-size: 1.12rem;
   color: #666666; }
+
+@media (max-width: 768px) {
+  .reviews__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .reviews__desc {
+    width: 100%;
+    text-align: center; }
+  .reviews__pic {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0px;
+    width: 7.75rem;
+    height: 7.8rem;
+    margin-bottom: 1.25rem; }
+  .reviews__item {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
 
 @media (max-width: 480px) {
   .reviews__item {
@@ -507,6 +541,9 @@
   -ms-flex-direction: row;
   flex-direction: row; }
 
+.fetures__info {
+  text-align: center; }
+
 .features__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -526,7 +563,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-right: 0.625rem; }
+  padding-right: 4rem; }
 
 .features__subtitle_text {
   font-size: 1.69rem;
@@ -567,7 +604,14 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    width: auto; }
+    width: auto;
+    margin-top: 1rem; }
+  .features__item {
+    padding: 0; }
+  .features__subtitle_text {
+    margin-bottom: 1rem; }
+  .icon__box {
+    margin-bottom: 1.5rem; }
   .features__subtitle_text {
     margin-bottom: 1rem; } }
 
