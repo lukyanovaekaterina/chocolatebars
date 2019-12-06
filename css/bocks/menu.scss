@@ -32,6 +32,7 @@
     color: white;
     font-size: 3rem;
     background: #000;
+    background-size: cover;
   }
   
   &__description {
@@ -46,6 +47,7 @@
       color: white;
       font-weight: 100;
       background-color: rgba(0,0,0,.6);
+      background-size: cover;
     }
   }
 }

@@ -69,22 +69,28 @@ justify-content: center;
   .promo{
     &__content{
       margin-top: 0;
+      z-index: 10;
     }
 
     &__foto{
       position: absolute;
-      height: 100%;
-      right: 15%;
+      width: 28.5rem;
+      height: 29.5rem;
     top:2%;
     }
-/*&__img1{
-  max-height: 100%;
-}
 
+&__img1{
+  position: absolute;
+height: 60%;
+width: 60%;
+}
 &__img2{
-  max-height: 100%;
-  top: 13.5rem;;
-}*/
+  position: relative;
+  height: 60%;
+  width: 60%;
+  bottom: 100%;
+  right: 35%;
+}
   }  
 .form__buttons{
   justify-content: center;
