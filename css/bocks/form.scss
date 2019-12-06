@@ -57,17 +57,17 @@
   }
 
       &__label-title {
-      font-family: AlegreyaSans;
-      font-size: 1rem;
-      font-weight: 300;
+      font-family: "Alegreya Sans";
+      font-size: 1.125rem;
+      font-weight: 500;
       color: #0f5a47;
       padding-bottom: 0.5rem;
       margin-right: 1.25rem;
   }
 
      &__input {
-      border: 2px solid transparent;
-      border-radius: 6px;
+      border: 6px solid transparent;
+      border-radius: 2px;
       padding: 0.6825rem 1.25rem;
       margin-bottom: 1.25rem;
       outline: none;
@@ -122,6 +122,7 @@
 
 .button__reset{
   color: #0f5a47;
+  padding-left: 1.625rem;
 }
 
 @media (max-width: 768px) {
@@ -130,6 +131,30 @@
     align-items: center;
     &__col{
         width: 80%;
+    }
+
+    &__elem{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+    }
+
+    &__col{
+        margin: 0;
+    }
+
+    &__row{
+        align-items: center;
+        justify-content: center;
+    }
+    &__label-radio{
+        justify-content: center;
+    }
+
+    &__label-checkbox{
+        align-items: center;
+        justify-content: center;
     }
 }
 }
