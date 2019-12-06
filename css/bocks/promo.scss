@@ -108,9 +108,12 @@ width: 60%;
     &__content{
       margin-top: 0px;
       width: auto;
+      align-items: center;
+      justify-content: center;
     }
     &__title{
       justify-content: center;
+      align-items: center;
     }
 
     &__heading{
@@ -120,6 +123,7 @@ width: 60%;
     &__message{
       text-align: center;
       justify-content: center;
+      margin:0 auto;
     }
 
     &__foto{
@@ -129,15 +133,17 @@ width: 60%;
     }
 &__img1{
   max-height: 100%;
+  top:1.5rem;
 }
 
 &__img2{
   height: 60%;
-
-  top: 13.3rem;
+  top: 9.5rem;
+  right: auto;
 }
   }  
 .form__buttons{
+  display: flex;
   justify-content: center;
   align-items: center;
 }

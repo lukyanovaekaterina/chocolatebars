@@ -28,6 +28,7 @@
   flex-wrap: wrap;
   padding-left: -1.25rem;
   padding: 0;
+  justify-content: center;
 }
 
 .team__item{
@@ -41,8 +42,8 @@
 
 .team__pic{
   object-fit: cover;
-  width: 13.75rem;
-  height: 18.125rem;
+  width: 14rem;
+  height: 17.875rem;
 }
 
 .accordion__team{
@@ -84,23 +85,20 @@ color:#323232;
 }
 
 .accordion__position{
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 @media (max-width: 768px){
   .team__item {
-    width: calc(100% / 2 - 20px);
+    width: calc(100% / 2 - 60px);
   }
-  .team__pic{
-    width: calc( 100% - 1.25rem);
-  }
-
   
 }
 
 @media (max-width: 480px){
   .team__item {
     width: calc(100% / 2 - 10px);
+
   }
   .team__pic{
     width: calc( 100% - 1.25rem);
