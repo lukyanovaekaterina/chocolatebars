@@ -1,14 +1,14 @@
 .scroll{
 position: fixed;
 color: #fff;
-right: 50px;
-top: 100px;
+right: 3.125rem;
+top: 6.25rem;
 z-index: 10;
 }
 
 .scroll__item{
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
   border: 1px solid transparent;
   margin-top: 4px;
@@ -25,3 +25,16 @@ z-index: 10;
   height: 100%;
   cursor: pointer;
 }
+
+@media (max-width: 768px){
+.scroll{
+  display: none;
+}
+}
+
+@media (max-width: 480px){
+  .scroll{
+    display: none;
+  }
+}
+
