@@ -111,8 +111,7 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    right: 1.125rem;
-    bottom: 20; }
+    right: 1.125rem; }
   .promo__img2 {
     position: absolute;
     top: 18rem;
