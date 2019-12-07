@@ -189,7 +189,8 @@
   .promo__foto {
     height: 40%;
     left: 25%;
-    right: 23%; }
+    right: 23%;
+    width: 100%; }
   .promo__img1 {
     max-height: 100%;
     top: 1.5rem; }
@@ -891,13 +892,17 @@
     background-size: cover; }
   .menu__description {
     width: 0; }
-  .menu__item.active .menu__description {
+  .menu__item :hover .menu__description {
     padding: 3.125rem 1.875rem;
     width: 27rem;
     color: white;
     font-weight: 100;
     background-color: rgba(0, 0, 0, 0.6);
     background-size: cover; }
+
+@media (max-width: 480px) {
+  .menu__list {
+    width: 100%; } }
 
 .map {
   background: url(./../../img/bg/map.jpg);
