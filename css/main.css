@@ -1219,9 +1219,16 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     width: 1100px; }
   .bar__content {
     display: -webkit-box;
@@ -1236,7 +1243,16 @@
     align-items: center;
     width: 51.25rem; }
   .bar__foto {
-    width: calc(100%/2); }
+    /* width: calc(100%/2);*/
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 23rem;
+    height: 23rem; }
+  .bar .__image {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 23rem;
+    height: 23rem; }
   .bar__desc {
     padding-left: 5rem; }
   .bar__composition {
@@ -1299,6 +1315,33 @@
     width: 50%;
     font-size: 3.75rem;
     font-weight: 100; }
+
+@media (max-width: 768px) {
+  .bar__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .bar__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .bar__desc {
+    width: 60%;
+    text-align: center;
+    padding: 0; }
+  .bar__image {
+    width: 20rem;
+    height: 20rem; }
+  .bar__list {
+    margin: 0 auto;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; } }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
