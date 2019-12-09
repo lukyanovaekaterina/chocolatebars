@@ -491,7 +491,7 @@
   border-color: white;
   padding: 1.125rem 1.75rem;
   background-color: #ffffff;
-  border-radius: 1.625rem;
+  border-radius: 2rem;
   color: #0f5a47;
   font-size: 1.125rem;
   text-transform: uppercase;
@@ -499,6 +499,11 @@
   font-weight: bold; }
 
 .btn__form {
+  color: #ffffff;
+  background-color: #0f5a47;
+  border-color: #0f5a47; }
+
+.btn__bar {
   color: #ffffff;
   background-color: #0f5a47;
   border-color: #0f5a47; }
@@ -1199,6 +1204,101 @@
     left: 0;
     right: 0;
     position: absolute; } }
+
+.bar {
+  background: url(./../../img/bg/bar.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 100vh;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .bar__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 1100px; }
+  .bar__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 51.25rem; }
+  .bar__foto {
+    width: calc(100%/2); }
+  .bar__desc {
+    padding-left: 5rem; }
+  .bar__composition {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #00accf;
+    width: 5.625rem;
+    height: 5.625rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-radius: 4px;
+    color: #ffffff; }
+  .bar__title {
+    padding: 2rem 0 1rem 0; }
+  .bar__candy {
+    width: 3.375rem;
+    height: 3.375rem;
+    stroke: #ffffff;
+    fill: #ffffff; }
+  .bar__heading {
+    font-size: 2.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    height: auto; }
+  .bar__message {
+    font-weight: 1.125rem;
+    color: #7f7f7f;
+    padding-bottom: 2.75rem; }
+  .bar__list {
+    padding: 0;
+    width: 90%; }
+  .bar__feature {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 2rem; }
+  .bar__ccal {
+    width: 50%;
+    font-weight: 900; }
+  .bar__ccal-title {
+    font-weight: 500; }
+  .bar__heft {
+    font-weight: 900; }
+  .bar__heft-title {
+    font-weight: 500; }
+  .bar__price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .bar__cost {
+    width: 50%;
+    font-size: 3.75rem;
+    font-weight: 100; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
