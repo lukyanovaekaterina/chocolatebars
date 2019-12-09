@@ -17,9 +17,11 @@
     right: 0;
     z-index: 2;
     background-color: #2e3336;
+
     .nav__list {
       flex-direction: column;
       font-size: 2rem;
+      align-items: center;
     }
 
     .nav__item {
