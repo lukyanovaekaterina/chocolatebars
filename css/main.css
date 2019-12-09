@@ -825,8 +825,7 @@
 .team__pic {
   -o-object-fit: cover;
   object-fit: cover;
-  width: 14rem;
-  height: 17.875rem; }
+  width: 14rem; }
 
 .accordion__team {
   position: relative;
@@ -882,7 +881,7 @@
 
 @media (max-width: 768px) {
   .team__item {
-    width: calc(100% / 2 - 60px); } }
+    width: calc(100% / 2 - 3.5rem); } }
 
 @media (max-width: 480px) {
   .team__item {

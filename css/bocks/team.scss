@@ -42,7 +42,6 @@
 .team__pic{
   object-fit: cover;
   width: 14rem;
-  height: 17.875rem;
 }
 
 .accordion__team{
@@ -89,7 +88,7 @@ color:#323232;
 
 @media (max-width: 768px){
   .team__item {
-    width: calc(100% / 2 - 60px);
+    width: calc(100% / 2 - 3.5rem);
   }
   
 }
