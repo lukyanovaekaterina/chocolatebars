@@ -24,6 +24,30 @@
   font-size: 1.125rem;
   font-weight: 300;
   font-stretch: semi-condensed; }
+  .nav.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6); }
+    .nav.active .nav__list {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    .nav.active .nav__item {
+      margin: 0 0 20px 0; }
 
 .nav__list {
   display: -webkit-box;
@@ -1153,19 +1177,13 @@
     .form__col {
       width: 80%; } }
 
-.menu-gamburger__content {
-  display: none; }
+.gamburger {
+  display: none;
+  position: relative;
+  z-index: 3; }
 
-@media (max-width: 480px) {
-  .menu-gamburger__content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-  .menu-gamburger {
+@media (max-width: 768px) {
+  .gamburger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1175,35 +1193,11 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
-  .gamburger__icon:hover .gamburger__list {
-    opacity: 1; }
   .gamburger__icon {
     stroke: white;
     fill: white;
     height: 1.625rem;
-    width: 1.625rem; }
-  .gamburger__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    background: #fff;
-    padding: 0px;
-    width: 100%;
-    opacity: 0;
-    -webkit-transition: opacity .4s;
-    -o-transition: opacity .4s;
-    transition: opacity .4s; }
-  .gamburger__list:before {
-    content: "";
-    display: block;
-    left: 0;
-    right: 0;
-    position: absolute; } }
+    width: 1.625rem; } }
 
 .bar {
   background: url(./../../img/bg/bar.png);

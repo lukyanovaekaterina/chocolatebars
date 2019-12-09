@@ -5,6 +5,26 @@
   font-size: 1.125rem;
   font-weight: 300;
   font-stretch: semi-condensed;
+
+&.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+    .nav__list {
+      flex-direction: column;
+    }
+
+    .nav__item {
+      margin: 0 0 20px 0;
+    }
+}
 }
 
 .nav__list{
@@ -22,10 +42,13 @@
   color: #ffffff;
 }
 
+
+
 @media (max-width: 768px){
 .nav{
   display: none;
 }
+
 }
 
 @media (max-width: 480px){
