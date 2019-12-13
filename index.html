@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Document</title>
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./styles/owl.theme.default.css" />
+  <link rel="stylesheet" href="./styles/owl.carousel.css" />
+  <link rel="stylesheet" href="./css/main.css" />
 </head>
 <body>
     <div class="wrapper">
@@ -203,13 +205,19 @@
 
       <section class="bar">
         <div class="container bar__container">
+          <div class="bar__content">
+              <button class="bar__button bar__button_prev">PREV</button>
+              <button class="bar__button bar__button_next">NEXT</button> 
+          <ul class="bar__list owl-carousel">
+            <li class="bar__item">
+              <div class="bar__composition">
           <div class="bar__composition-button">
                 <svg class="bar__candy">
                   <use xlink:href="./sprite.svg#chocolate-bar"></use>
                 </svg>
                 <p class="bar__candy-title">состав</p>
               </div>
-             <!--- <table class="bar__composition-table">
+             <table class="bar__composition-table">
                 <tr>
                   <td>
                     <svg class="bar__composition-image">
@@ -273,20 +281,20 @@
                               <td>Какао бобы</td>
                               <td>25г</td>
                             </tr>
-              </table> -->
-          <div class="bar__content">
+              </table>
+          </div>
+          <div class="bar__content-menu">
             <div class="bar__foto">
               <img src="img/Foto/Товар1.png" alt="Фото батончиков" class="bar__image">
             </div>
             <div class="bar__desc">
-              
               <div class="bar__title">
                 <h2 class="bar__heading">
                   батончик "гранола виноград"
                 </h2>
              </div>
-             <ul class="bar__list">
-               <li class="bar__item">
+             <ul class="bar__list-menu">
+               <li class="bar__item-menu">
                 <p class="bar__message"> Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и какао бобы.
               </p>   
                </li>
@@ -316,6 +324,126 @@
              </li> 
              </ul>           
             </div>
+          </div>
+          </li>
+          <li class="bar__item">
+              <div class="bar__composition">
+          <div class="bar__composition-button">
+                <svg class="bar__candy">
+                  <use xlink:href="./sprite.svg#chocolate-bar"></use>
+                </svg>
+                <p class="bar__candy-title">состав</p>
+              </div>
+             <table class="bar__composition-table">
+                <tr>
+                  <td>
+                    <svg class="bar__composition-image">
+                     <use xlink:href="./sprite.svg#oat"></use>
+                    </svg>
+                  </td>
+                  <td>Овёс</td>
+                  <td>25г</td>
+                </tr>
+                <tr>
+                    <td>
+                      <svg class="bar__composition-image">
+                        <use xlink:href="./sprite.svg#seaweed"></use>
+                      </svg>
+                    </td>
+                    <td>Мор.водоросли</td>
+                    <td>25г</td>
+                  </tr>
+                  <tr>
+                      <td>
+                        <svg class="bar__composition-image">
+                          <use xlink:href="./sprite.svg#almond"></use>
+                        </svg>
+                      </td>
+                      <td>Миндаль</td>
+                      <td>25г</td>
+                    </tr>
+                    <tr>
+                        <td>
+                          <svg class="bar__composition-image">
+                            <use xlink:href="./sprite.svg#washing-powder"></use>
+                          </svg>
+                        </td>
+                        <td>Сухое молоко</td>
+                        <td>25г</td>
+                      </tr>
+                      <tr>
+                          <td>
+                            <svg class="bar__composition-image">
+                              <use xlink:href="./sprite.svg#seeds"></use>
+                            </svg>
+                          </td>
+                          <td>Тыкв.семечки</td>
+                          <td>25г</td>
+                        </tr>
+                        <tr>
+                            <td>
+                              <svg class="bar__composition-image">
+                                <use xlink:href="./sprite.svg#apitherapy"></use>
+                              </svg>
+                            </td>
+                            <td>Зам.схахара</td>
+                            <td>25г</td>
+                          </tr>
+                          <tr>
+                              <td>
+                                <svg class="bar__composition-image">
+                                  <use xlink:href="./sprite.svg#beans"></use>
+                                </svg>
+                              </td>
+                              <td>Какао бобы</td>
+                              <td>25г</td>
+                            </tr>
+              </table>
+          </div>
+          <div class="bar__content-menu">
+            <div class="bar__foto">
+              <img src="img/Foto/Товар2.png" alt="Фото батончиков" class="bar__image">
+            </div>
+            <div class="bar__desc">
+              <div class="bar__title">
+                <h2 class="bar__heading">
+                  батончик "гранола виноград"
+                </h2>
+             </div>
+             <ul class="bar__list-menu">
+               <li class="bar__item-menu">
+                <p class="bar__message"> Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и какао бобы.
+              </p>   
+               </li>
+               <li class="bar__feature">
+               <div class="bar__ccal">
+                 <h5 class="bar__ccal-title">Каллорийность</h5>
+                 <p>
+                 110 ккал
+                 </p>
+               </div>
+               <div class="bar__heft">
+                 <h5 class="bar__heft-title">
+                  Вес
+                 </h5>
+                 <p>
+                   95 грамм
+                 </p>
+               </div>
+               </li>
+               <li class="bar__price">
+               <p class="bar__cost">
+                140 Р
+               </p>
+               <div class="bar__button-form">
+                <button type="submit" class="btn btn__bar">Заказать</button>
+               </div>
+             </li> 
+             </ul>           
+            </div>
+          </div>
+          </li>
+          </ul>
           </div>
         </div>
       </section>
@@ -607,6 +735,8 @@
       
     </div>
     
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="./owl.carousel.min.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>

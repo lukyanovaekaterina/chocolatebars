@@ -1,0 +1,23 @@
+.bar__composition{
+  display: flex;
+  flex-direction: row;
+  margin-left: 10rem;
+}
+
+
+.bar__composition-table{
+  display: none;
+  background-color: #ffffff;
+  table-layout: auto;
+
+  &.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 270px;
+    height: 390px;
+    z-index: 2;
+  }
+}
+
