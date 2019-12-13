@@ -1354,7 +1354,7 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
-  .bar__composition-button {
+  .bar__composition {
     margin-left: 75%; }
   .bar__content-menu {
     -webkit-box-orient: vertical;
@@ -1362,7 +1362,7 @@
     -ms-flex-direction: column;
     flex-direction: column; }
   .bar__desc {
-    width: 60%;
+    width: 90%;
     text-align: center;
     padding: 0; }
   .bar__list-menu {
@@ -1405,6 +1405,19 @@
     width: 16.875rem;
     height: 24.375rem;
     z-index: 2; }
+
+@media (max-width: 768px) {
+  .bar__composition {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    margin: auto;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end; }
+    .bar__composition.activ.bar__composition-button {
+      margin: 0; } }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document

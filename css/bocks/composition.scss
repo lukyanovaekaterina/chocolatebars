@@ -22,3 +22,16 @@
   }
 }
 
+@media (max-width: 768px){
+  .bar__composition{
+    flex-direction: row-reverse;
+    margin: auto;
+    justify-content: end;
+
+    &.activ{
+      &.bar__composition-button{
+        margin: 0;
+      }
+    }
+  }
+}

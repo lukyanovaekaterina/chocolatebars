@@ -162,7 +162,7 @@
     &__container{
       flex-direction: column;
     }
-    &__composition-button{
+    &__composition{
       margin-left: 75%;
     }
 
@@ -171,12 +171,11 @@
     }
 
     &__desc{
-      width: 60%;
+      width: 90%;
       text-align: center;
       padding: 0;
 
     }
-
        
     &__list-menu{
       margin: 0 auto;
