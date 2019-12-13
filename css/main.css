@@ -157,20 +157,16 @@
   .promo__content {
     margin-top: 0; }
   .promo__foto {
-    position: absolute;
-    width: 28.5rem;
+    left: 4.375rem;
     height: 29.5rem;
     top: 2%; }
   .promo__img1 {
     position: absolute;
-    height: 60%;
     width: 60%; }
   .promo__img2 {
     position: relative;
-    height: 60%;
     width: 60%;
-    bottom: 100%;
-    right: 35%; }
+    bottom: 100%; }
   .form__buttons {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -1239,44 +1235,37 @@
     align-items: center;
     width: 51.25rem; }
   .bar__foto {
-    /* width: calc(100%/2);*/
     -o-object-fit: cover;
     object-fit: cover;
     width: 23rem;
     height: 23rem; }
-  .bar .__image {
+  .bar__image {
     -o-object-fit: cover;
     object-fit: cover;
     width: 23rem;
     height: 23rem; }
   .bar__desc {
     padding-left: 5rem; }
-  .bar__composition {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .bar__composition-button {
+    display: block;
     background-color: #00accf;
-    width: 5.625rem;
-    height: 5.625rem;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    width: 5.5rem;
+    height: 5.5rem;
     border-radius: 4px;
-    color: #ffffff; }
+    color: #ffffff;
+    margin-left: 10rem; }
   .bar__title {
     padding: 2rem 0 1rem 0; }
   .bar__candy {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
     width: 3.375rem;
     height: 3.375rem;
     stroke: #ffffff;
     fill: #ffffff; }
+  .bar__candy-title {
+    padding-left: 1.5rem;
+    font-weight: 700; }
   .bar__heading {
     font-size: 2.25rem;
     font-weight: 600;
@@ -1311,6 +1300,9 @@
     width: 50%;
     font-size: 3.75rem;
     font-weight: 100; }
+  .bar__composition-image {
+    widows: 40px;
+    height: 40px; }
 
 @media (max-width: 768px) {
   .bar__container {
@@ -1318,6 +1310,8 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
+  .bar__composition-button {
+    margin-left: 85%; }
   .bar__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

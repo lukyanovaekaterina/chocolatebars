@@ -24,13 +24,12 @@
 }
 
 &__foto{
- /* width: calc(100%/2);*/
   object-fit: cover;
   width: 23rem;
   height: 23rem;
 }
 
-.__image{
+&__image{
   object-fit: cover;
   width: 23rem;
   height: 23rem;
@@ -40,16 +39,14 @@
   padding-left: 5rem;
 }
 
-&__composition{
-  display: flex;
+&__composition-button{
+  display: block;
   background-color: #00accf;
-  width: 5.625rem;
-  height: 5.625rem;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  width: 5.5rem;
+  height: 5.5rem;
   border-radius: 4px;
   color: #ffffff;
+  margin-left: 10rem;
 }
 
 &__title{
@@ -57,11 +54,19 @@
 }
 
 &__candy{
+ margin-left: 1rem;
+ margin-top: 0.5rem;
   width: 3.375rem;
   height: 3.375rem;
   stroke: #ffffff;
   fill: #ffffff;
 }
+
+&__candy-title{
+  padding-left: 1.5rem;
+  font-weight: 700;
+}
+
 &__heading{
   font-size: 2.25rem;
   font-weight: 600;
@@ -108,6 +113,11 @@
   font-size: 3.75rem;
   font-weight: 100;
 }
+
+&__composition-image{
+  widows: 40px;
+  height: 40px;
+}
 }
 
 @media (max-width: 768px){
@@ -115,6 +125,9 @@
 
     &__container{
       flex-direction: column;
+    }
+    &__composition-button{
+      margin-left: 85%;
     }
 
     &__content{
