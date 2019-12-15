@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="wrapper">
-      <div class="scroll">
+       <div class="scroll">
        <ul class="scroll__list">
           <li class="scroll__item scroll__item--active">
               <a href="#" class="scroll__link"></a>
@@ -143,7 +143,7 @@
        </div>
       </section>
 
-      <section class="why">
+     <section class="why">
         <div class="container why__container">
         <div class="why__content">
          <div class="why__title"> 
@@ -518,7 +518,7 @@
         </div>
       </section>
 
-      <section class="menu">
+    <section class="menu">
               <ul class="menu__list">
                 <li class="menu__item">
                   <a href="#" class="menu__trigger" style="background-image:url(./../img/bg/Milk.png)">
@@ -555,12 +555,15 @@
         <div class="reviews__title">
           <h2 class="reviews__heading">отзывы</h2>
         </div>
-        <div class="reviews__item">
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <div class="reviews__image">
             <img
             src="./img/Foto/Anna.jpg"
             alt="Фотография пользователя"
             class="reviews__pic"
           />
+            </div>
           <div class="reviews__desc">
           <h5 class="reviews__subtitle_text">
               Лучший перекус
@@ -572,7 +575,48 @@
               Алена Хмельницкая
          </p>
           </div>
-         </div>
+         </li>
+         <li class="reviews__item">
+          <div class="reviews__image">
+          <img
+          src="./img/Foto/Vadim.jpg"
+          alt="Фотография пользователя"
+          class="reviews__pic"
+        />
+          </div>
+        <div class="reviews__desc">
+        <h5 class="reviews__subtitle_text">
+            Лучший перекус
+        </h5>
+        <p class="reviews__message">
+            Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течении дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик - он всегда под рукой. Это приятно и удобно.
+        </p>
+        <p class="reviews__name">
+            Алена Хмельницкая
+       </p>
+        </div>
+         </li>
+         <li class="reviews__item">
+        <div class="reviews__image">
+        <img
+        src="./img/Foto/Maria.jpg"
+        alt="Фотография пользователя"
+        class="reviews__pic"
+      />
+        </div>
+      <div class="reviews__desc">
+      <h5 class="reviews__subtitle_text">
+          Лучший перекус
+      </h5>
+      <p class="reviews__message">
+          Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течении дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик - он всегда под рукой. Это приятно и удобно.
+      </p>
+      <p class="reviews__name">
+          Алена Хмельницкая
+     </p>
+      </div>
+         </li>
+         </ul>
         <ul class="reviews__icon">
             <li class="reviews__foto_item">
                 <img
@@ -732,7 +776,6 @@
             </div>
        </footer>
       </section>
-      
     </div>
     
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
