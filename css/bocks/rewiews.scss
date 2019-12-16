@@ -26,12 +26,17 @@
 }
 
 .reviews__item{
+  display: none;
+}
+
+.reviews__item--activ{
   display: flex;
   justify-content: center;
   flex-direction: row;
   background-color:  #f8faf9;
   padding: 3.125rem 1.25rem 2.25rem 3rem;
 }
+
 
 .reviews__pic{
   width: 15.625rem;

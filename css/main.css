@@ -378,6 +378,9 @@
   margin-bottom: 1.25rem; }
 
 .reviews__item {
+  display: none; }
+
+.reviews__item--activ {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
