@@ -928,15 +928,36 @@
     font-size: 3rem;
     background: #000;
     background-size: cover; }
+  .menu__trigger-text {
+    margin-top: 2.81rem; }
   .menu__description {
-    width: 0; }
-  .menu__item :hover .menu__description {
-    padding: 3.125rem 1.875rem;
+    display: none; }
+  .menu__item.active .menu__description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 2.5rem 1.875rem;
     width: 27rem;
     color: white;
     font-weight: 100;
     background-color: rgba(0, 0, 0, 0.6);
     background-size: cover; }
+  .menu__item.active .menu__description-text {
+    font-size: 1rem;
+    line-height: 1.5; }
+  .menu__item.active .menu__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    font-size: 2rem; }
 
 @media (max-width: 480px) {
   .menu__list {

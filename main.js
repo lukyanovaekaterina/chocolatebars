@@ -1,3 +1,5 @@
+//gamburger
+
 const gamburger__iconButton = document.querySelector(".gamburger__icon");
 const navigation = document.querySelector(".nav");
 
@@ -6,6 +8,7 @@ const navigation = document.querySelector(".nav");
  document.body.classList.toggle("overflow");
 });
 
+//bar
 const composition__iconButton = document.querySelector(".bar__composition-button");
 const table = document.querySelector(".bar__composition-table");
 
@@ -50,6 +53,19 @@ let reviewItemsActiv = document.querySelector(".reviews__item--activ");
 }
 
 
-//bar
+//menu
+
+const teamMembers = document.querySelectorAll(".menu__item");
+
+teamMembers.forEach(el =>
+el.addEventListener("click", function() {
+teamMembers.forEach(el => el.classList.remove("active"));
+addClassList(el);
+})
+);
+
+function addClassList(el) {
+el.classList.add("active");
+}
 
 
