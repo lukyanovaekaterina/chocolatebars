@@ -55,11 +55,12 @@ let reviewItemsActiv = document.querySelector(".reviews__item--activ");
 
 //menu
 
-const teamMembers = document.querySelectorAll(".menu__item");
+const menuMembers = document.querySelectorAll(".menu__item");
+const iconmenu = document.querySelector(".menu__icon");
 
-teamMembers.forEach(el =>
+menuMembers.forEach(el =>
 el.addEventListener("click", function() {
-teamMembers.forEach(el => el.classList.remove("active"));
+menuMembers.forEach(el => el.classList.remove("active"));
 addClassList(el);
 })
 );
@@ -68,4 +69,25 @@ function addClassList(el) {
 el.classList.add("active");
 }
 
+iconmenu.addEventListener("click", function(){
+  
+})
+
+
+//form
+
+const myForm = document.querySelector(".form__elem");
+
+myForm.addEventListener("submit", function(e) {
+e.preventDefault();
+const formData = new FormData(myForm);
+formData.append('to', "katrin2006.06@inbox.ru");
+const request = new XMLHttpRequest();
+request.open("POST", "https://webdev-api.loftschool.com/sendmail");
+request.send(formData);
+request.addEventListener('load', function(){
+  const response = JSON.parse(request.response);
+ console.log(response);
+});
+});
 

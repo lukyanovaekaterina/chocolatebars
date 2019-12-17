@@ -650,37 +650,37 @@
             <div class="form__title">
              <h2 class="form__heading">закажите доставку</h2> 
             </div>
-              <form action="#" class="form__elem">
+              <form action="#" class="form__elem" id="myForm">
                   <div class="form__col form--col--left">
                       <div class="form__row">
-                          <label class="form__label">
+                          <label for="name" class="form__label">
                               <h3 class="form__label-title">Имя</h3>
-                              <input type="text" class="form__input">
+                              <input type="text" class="form__input" name="name" id="name">
                           </label>
-                          <label class="form__label">
+                          <label for="phone" class="form__label">
                               <h3 class="form__label-title">Телефон</h3>
-                              <input type="text" class="form__input">
+                              <input type="text" class="form__input" name="phone" id="phone">
                           </label>
                       </div>
                       <div class="form__row">
-                          <label class="form__label">
+                          <label for="street"  class="form__label">
                               <h3 class="form__label-title">Улица</h3>
-                              <input type="text" class="form__input">
+                              <input type="text" class="form__input" name="street" id="street">
                           </label>
                       </div>
                       <div class="form__row">
                           <div class="form__row">
-                              <label class="form__label">
+                              <label for="home" class="form__label">
                                   <h3 class="form__label-title">Дом</h3>
-                                  <input type="text" class="form__input">
+                                  <input type="text" class="form__input" name="home" id="home">
                               </label>
                               <label class="form__label">
                                   <h3 class="form__label-title">Корпус</h3>
                                   <input type="text" class="form__input">
                               </label>
-                              <label class="form__label">
+                              <label for="room" class="form__label">
                                   <h3 class="form__label-title">Квартира</h3>
-                                  <input type="text" class="form__input">
+                                  <input type="text" class="form__input" id="room">
                               </label>
                               <label class="form__label">
                                   <h3 class="form__label-title">Этаж</h3>
@@ -691,9 +691,13 @@
                   </div>
                   <div class="form__col">
                       <div class="form__row">
-                          <label class="form__label">
+                          <label for="cooment" class="form__label">
                               <h3 class="form__label-title">Комментарий</h3>
-                              <textarea name="comments" class="form__input form__textarea"></textarea>
+                              <textarea 
+                              name="comment" 
+                              class="form__input form__textarea"
+                              id="cooment">
+                            </textarea>
                           </label>
                       </div>
                       <div class="form__row">
@@ -717,7 +721,7 @@
                       <div class="form__row">
                           <div class="form__button">
                               <button type="submit" class="btn btn__form">Заказать</button>
-                              <h3 class="button__reset">Очистить</h3>
+                              <button type="reset" class="button__reset">Очистить</button>
                           </div>
                       </div>
                   </div>
@@ -748,28 +752,36 @@
                 <div class="social">
                   <ul class="social__list">
                     <li class="social__item">
+                      <a href="#" class="social__link"> 
                      <svg class="social__icon">
                        <use xlink:href="./sprite.svg#vk">
                        </use>
                      </svg>
+                    </a>
                     </li>
                     <li class="social__item">
+                      <a href="#" class="social__link">
                         <svg class="social__icon">
                             <use xlink:href="./sprite.svg#f">
                             </use>
                         </svg>
+                      </a>
                     </li>
                     <li class="social__item">
+                      <a href="#" class="social__link">
                         <svg class="social__icon">
                             <use xlink:href="./sprite.svg#in">
                             </use>
                         </svg> 
+                      </a>
                     </li>
                     <li class="social__item">
+                      <a href="#" class="social__link">
                         <svg class="social__icon">
                             <use xlink:href="./sprite.svg#tv">
                             </use>
                           </svg> 
+                        </a>
                     </li>
                   </ul>
                 </div>
