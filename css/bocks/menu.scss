@@ -60,10 +60,12 @@
       font-size: 1rem;
       line-height: 1.5;
     }
-    .menu__icon{
+    .menu__close{
       display: flex;
       flex-direction: row-reverse;
       font-size: 2rem;
+      text-decoration: none;
+      color: #ffffff;
       z-index: 5;
     }
   }

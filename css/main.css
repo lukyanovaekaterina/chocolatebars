@@ -957,7 +957,7 @@
   .menu__item.active .menu__description-text {
     font-size: 1rem;
     line-height: 1.5; }
-  .menu__item.active .menu__icon {
+  .menu__item.active .menu__close {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -966,6 +966,8 @@
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
     font-size: 2rem;
+    text-decoration: none;
+    color: #ffffff;
     z-index: 5; }
 
 @media (max-width: 480px) {

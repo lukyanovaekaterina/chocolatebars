@@ -56,13 +56,15 @@ let reviewItemsActiv = document.querySelector(".reviews__item--activ");
 //menu
 
 const menuMembers = document.querySelectorAll(".menu__item");
-const iconmenu = document.querySelector(".menu__icon");
+const menuLink = document.querySelectorAll(".menu__trigger");
+const iconmenu = document.querySelector(".menu__close");
 
-menuMembers.forEach(el =>
+menuMembers.forEach(el => 
 el.addEventListener("click", function() {
 menuMembers.forEach(el => el.classList.remove("active"));
 addClassList(el);
 })
+
 );
 
 function addClassList(el) {
@@ -90,4 +92,5 @@ request.addEventListener('load', function(){
  console.log(response);
 });
 });
+
 
