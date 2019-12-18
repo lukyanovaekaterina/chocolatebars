@@ -973,7 +973,9 @@
     width: 100%; } }
 
 .map {
-  background: url(./../../img/bg/map.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
