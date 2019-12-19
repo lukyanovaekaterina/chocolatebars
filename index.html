@@ -651,13 +651,16 @@
             <h2 class="presentation__heading">как мы работаем</h2>
           </div>
           <video width="660" height="400">
-            <source src="video/videoplayback.mp4" type="video/mp4">
-            <source src="./video/videoplayback.ogg" type="video/ogg">
-            <source src="./video/videoplayback.webm" type="video/webm">
+            <source src="./video/videoplayback.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            <source src="./video/videoplayback.ogg" type='video/ogg; codecs="theora, vorbis"'>
+            <source src="./video/videoplayback.webm" type='video/webm; codecs="vp8, vorbis"'>
           </video>
+          <div id="controls" class="hidden">
+            <a id="playBtn">Play</a>
+            <span id="timer">00:00</span>
+            <input type="range" step="0.1" min="0" max="1" value="0" id="volume" />
         </div>
-
-
+        </div>
       </section>
 
       <section class="form">
@@ -810,7 +813,7 @@
     
     
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-    <script src="./owl.carousel.min.js"></script>
-    <script src="./main.js"></script>
+    <script src="./JS/owl.carousel.min.js"></script>
+    <script src="./JS/main.js"></script>
 </body>
 </html>
