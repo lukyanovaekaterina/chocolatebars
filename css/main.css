@@ -1437,7 +1437,9 @@
 .bar__composition-table {
   display: none;
   background-color: #ffffff;
-  table-layout: auto; }
+  table-layout: auto;
+  position: absolute;
+  z-index: 1; }
   .bar__composition-table.active {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1448,10 +1450,9 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    position: relative;
+    margin-left: 11.25rem;
     width: 16.875rem;
-    height: 24.375rem;
-    z-index: 2; }
+    height: 24.375rem; }
 
 @media (max-width: 768px) {
   .bar__composition {
@@ -1464,7 +1465,9 @@
     -ms-flex-pack: end;
     justify-content: end; }
     .bar__composition.activ.bar__composition-button {
-      margin: 0; } }
+      margin: 0; }
+  .bar__composition-table.active {
+    margin-left: 0; } }
 
 .presentation {
   height: 100vh; }
