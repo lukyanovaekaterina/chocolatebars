@@ -78,6 +78,19 @@
 .menu{
   &__list{
     width: 100%;
+    padding-left: 0;
+  }
+
+  &__item{
+    &.active {
+        .menu__description{
+        background-color: #3e4042;
+        opacity: 0.9;
+        width: 31.5rem;
+
+      }
+
+    }
   }
   
 }

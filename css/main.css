@@ -194,7 +194,8 @@
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center;
+    padding-top: 1rem; }
   .promo__title {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -211,7 +212,7 @@
     justify-content: center;
     margin: 0 auto; }
   .promo__foto {
-    height: 40%;
+    height: 50%;
     left: 25%;
     right: 23%;
     width: 100%; }
@@ -421,16 +422,7 @@
 
 @media (max-width: 768px) {
   .reviews__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
+    display: none; }
   .reviews__desc {
     width: 100%;
     text-align: center; }
@@ -445,16 +437,7 @@
     width: 7.75rem;
     height: 7.8rem;
     margin-bottom: 1.25rem; }
-  .reviews__item {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; } }
-
-@media (max-width: 480px) {
-  .reviews__item {
+  .reviews__item--activ {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -464,27 +447,10 @@
     flex-direction: column;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; }
-  .reviews__desc {
-    width: 100%;
-    text-align: center; }
-  .reviews__pic {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    padding: 0px;
-    width: 7.75rem;
-    height: 7.8rem;
-    margin-bottom: 1.25rem; }
-  .reviews__item {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center; } }
 
 .thumb__list {
@@ -514,6 +480,10 @@
   stroke: #b0f7ff;
   width: 3.75rem;
   height: 2.5rem; }
+
+@media (max-width: 768px) {
+  .thumb__list {
+    padding-top: 4rem; } }
 
 .btn {
   border-color: white;
@@ -737,20 +707,49 @@
 .scroll {
   position: fixed;
   color: #fff;
-  right: 3.125rem;
-  top: 6.25rem;
+  right: 70px;
+  top: 87px;
   z-index: 10; }
 
+@media screen and (max-width: 480px) {
+  .scroll {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  .scroll {
+    display: none; } }
+
+.scroll__list {
+  list-style-type: none; }
+
 .scroll__item {
-  width: 1rem;
-  height: 1rem;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   border: 1px solid transparent;
   margin-top: 4px;
   position: relative; }
 
 .scroll__item--active {
-  border-color: #fff; }
+  border-color: #fff;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
+
+.scroll__item:before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer; }
 
 .scroll__link {
   display: block;
@@ -972,7 +971,12 @@
 
 @media (max-width: 480px) {
   .menu__list {
-    width: 100%; } }
+    width: 100%;
+    padding-left: 0; }
+  .menu__item.active .menu__description {
+    background-color: #3e4042;
+    opacity: 0.9;
+    width: 31.5rem; } }
 
 .map {
   display: -webkit-box;
@@ -1333,7 +1337,8 @@
     stroke: #ffffff;
     fill: #ffffff; }
   .bar__candy-title {
-    font-weight: 700; }
+    font-weight: 700;
+    margin-left: 1.5rem; }
   .bar__heading {
     font-size: 2.25rem;
     font-weight: 600;
@@ -1372,6 +1377,9 @@
     width: 2.5rem;
     height: 2.5rem; }
 
+.overflow {
+  overflow: hidden; }
+
 .bar__button {
   position: absolute;
   z-index: 5;
@@ -1393,6 +1401,8 @@
     flex-direction: column; }
   .bar__composition {
     margin-left: 75%; }
+  .bar__composition-button {
+    margin-right: 0.5rem; }
   .bar__content-menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1790,7 +1800,7 @@ h6 {
   padding: 0; }
 
 .container {
-  width: 68.75rem;
+  width: 90vw;
   margin: 0 auto;
   height: 100%; }
 
@@ -1821,8 +1831,7 @@ li {
 @media (max-width: 768px) {
   html {
     font-size: 13px; }
-  .container {
-    max-width: 600px; }
+  /*.container {max-width: 600px}*/
   .map__container {
     width: 100%; }
   .team__item {
@@ -1880,8 +1889,7 @@ li {
 @media (max-width: 480px) {
   html {
     font-size: 11px; }
-  .container {
-    max-width: 300px; }
+  /*.container {max-width: 300px}*/
   .map__container {
     width: 100%; } }
 

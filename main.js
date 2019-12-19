@@ -8,6 +8,11 @@ const navigation = document.querySelector(".nav");
  document.body.classList.toggle("overflow");
 });
 
+
+//scrol
+
+
+
 //bar
 const composition__iconButton = document.querySelector(".bar__composition-button");
 const table = document.querySelector(".bar__composition-table");
