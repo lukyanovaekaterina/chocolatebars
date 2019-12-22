@@ -65,7 +65,8 @@ const menuLink = document.querySelectorAll(".menu__trigger");
 const iconmenu = document.querySelector(".menu__close");
 
 menuMembers.forEach(el => 
-el.addEventListener("click", function() {
+el.addEventListener("click", function(e) {
+e.preventDefault;
 menuMembers.forEach(el => el.classList.remove("active"));
 addClassList(el);
 })
