@@ -50,10 +50,13 @@ reviewsFoto[i].addEventListener("click", function () {
 reviewsFoto[i].classList.add("reviews__foto--activ");
 let reviewsFotoActiv = document.querySelector(".reviews__foto--activ");
 reviewsFotoActiv.classList.remove("reviews__foto--activ");
-reviewItems[i].classList.add("reviews__item--activ");
-let reviewItemsActiv = document.querySelector(".reviews__item--activ");
-//reviewItemsActiv.classList.remove("reviews__item--activ");
 
+reviewItems[i].classList.add("active");
+reviewItems.forEach((item, idx) => {
+      if (i !== idx) {
+      	item.classList.remove("active");
+      }
+    })
 });
 }
 

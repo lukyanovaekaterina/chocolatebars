@@ -381,7 +381,7 @@
 .reviews__item {
   display: none; }
 
-.reviews__item--activ {
+.reviews__item.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1829,7 +1829,7 @@ h6 {
   padding: 0; }
 
 .container {
-  width: 64rem;
+  width: 68.75rem;
   margin: 0 auto;
   height: 100%; }
 
@@ -1860,7 +1860,8 @@ li {
 @media (max-width: 768px) {
   html {
     font-size: 13px; }
-  /*.container {max-width: 600px}*/
+  .container {
+    max-width: 600px; }
   .map__container {
     width: 100%; }
   .team__item {
@@ -1918,9 +1919,10 @@ li {
 @media (max-width: 480px) {
   html {
     font-size: 11px; }
-  /*.container {max-width: 300px}*/
+  .container {
+    max-width: 300px; }
   .map__container {
-    width: 100%; } }
+    width: 100vw; } }
 
 @font-face {
   font-family: "AlegreyaSans", sans-serif;
