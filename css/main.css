@@ -437,7 +437,7 @@
     width: 7.75rem;
     height: 7.8rem;
     margin-bottom: 1.25rem; }
-  .reviews__item--activ {
+  .reviews__item.activ {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1422,20 +1422,11 @@
     align-items: center; } }
 
 .bar__composition {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: 11.5rem; }
+  margin-left: 11rem; }
 
 .bar__composition-table {
   display: none;
+  margin-top: -5.5rem;
   background-color: #ffffff;
   table-layout: auto;
   position: absolute;
@@ -1450,7 +1441,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-left: 11.25rem;
+    margin-left: 6rem;
     width: 16.875rem;
     height: 24.375rem; }
 
@@ -1459,7 +1450,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 0 0 340px; }
+    margin: 0 0 0 26rem; }
     .bar__composition.activ.bar__composition-button {
       padding-left: 2rem; }
   .bar__composition-table.active {
