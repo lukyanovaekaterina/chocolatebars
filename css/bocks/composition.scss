@@ -26,13 +26,12 @@
 
 @media (max-width: 768px){
   .bar__composition{
-    flex-direction: row-reverse;
-    margin: auto;
-    justify-content: end;
+    display: flex;
+    margin:0 0 0 340px;
 
     &.activ{
       &.bar__composition-button{
-        margin: 0;
+       padding-left: 2rem;
       }
     }
     
@@ -40,7 +39,7 @@
 
   .bar__composition-table{
     &.active{
-    margin-left: 0;  
+   margin-left: -11rem;  
     }
     
   }

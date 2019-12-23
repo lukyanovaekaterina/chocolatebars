@@ -1456,18 +1456,14 @@
 
 @media (max-width: 768px) {
   .bar__composition {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
-    margin: auto;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: end; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0 0 340px; }
     .bar__composition.activ.bar__composition-button {
-      margin: 0; }
+      padding-left: 2rem; }
   .bar__composition-table.active {
-    margin-left: 0; } }
+    margin-left: -11rem; } }
 
 .presentation {
   height: 100vh; }
