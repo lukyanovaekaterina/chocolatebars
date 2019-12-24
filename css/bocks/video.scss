@@ -19,5 +19,23 @@
   }
 }
 
+.player__video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.video__start{
+background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain; 
+}
 
+.video__start--big{
+position: absolute;
+  width: 5.375rem;
+  height: 7.375rem;
+  background-image: url(./../../img/icon/play-button.png);
+  z-index: 20; 
+  border: none;
+}

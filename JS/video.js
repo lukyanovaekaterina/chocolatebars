@@ -1,4 +1,4 @@
-var videoEl = document.getElementsByTagName('video')[0],
+const videoEl = document.getElementsByTagName('video')[0],
    playBtn = document.getElementById('playBtn'),
    vidControls = document.getElementById('controls'),
    volumeControl = document.getElementById('volume'),
@@ -43,7 +43,7 @@ videoEl.addEventListener('timeupdate', function () {
 
 function secondsToTime(time){
              
-  var h = Math.floor(time / (60 * 60)),
+  const h = Math.floor(time / (60 * 60)),
       dm = time % (60 * 60),
       m = Math.floor(dm / 60),
       ds = dm % 60,

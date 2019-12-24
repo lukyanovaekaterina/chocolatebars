@@ -978,10 +978,12 @@
     opacity: 0.9;
     width: 31.5rem; } }
 
-.map {
+.map__section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /*width: 100%;*/
+  background-color: #cfdeda;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1485,6 +1487,30 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+
+.player__video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.video__start {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain; }
+
+.video__start--big {
+  position: absolute;
+  width: 5.375rem;
+  height: 7.375rem;
+  background-image: url(./../../img/icon/play-button.png);
+  z-index: 20;
+  border: none; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
