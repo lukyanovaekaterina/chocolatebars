@@ -118,12 +118,21 @@ ymaps.ready(init);
             center: [55.76, 37.64],
             // Уровень масштабирования. Допустимые значения:
             // от 0 (весь мир) до 19.
-            zoom: 15
+            zoom: 12
         });
+      }
         myMap.behaviors.disable("scrollZoom");
         {
-          myPlacemark1 = new ymaps.Placemark
-          [          ]
-        };
-    }
+          myPlacemark1 = new ymaps.Placemark(
+            [55.7464, 37.5989],
+          
+          {
+            iconLayout: "default#image",
+            iconImageHref: "./../img/icon/1.png",
+            iconImageSize: [60, 60],
+          }
+          );
 
+        myMap.geoObjects.add(myPlacemark1);
+    }
+  

@@ -1,11 +1,16 @@
 .map__section{
   display: flex;
   /*width: 100%;*/
-  background-color: #cfdeda;
+ /* background-color: #cfdeda;*/
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center center;
 height: 100vh;
 position: relative;
 
+}
+
+.map{
+  width: 100%;
+  height: 100%;
 }
