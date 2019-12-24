@@ -39,3 +39,19 @@ position: absolute;
   z-index: 20; 
   border: none;
 }
+
+.player__scale{
+  display: flex;
+  width: 100vw;
+  height: 36px;
+  background-color: #3e3e3e;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.play__button{
+  background-image: url(./../../img/icon/Play-gray.png);
+  width: 20px;
+  height: 20px;
+}

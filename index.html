@@ -10,6 +10,7 @@
 </head>
 <body>
     <div class="wrapper">
+      <div class="maincontent">
        <div class="scroll">
        <ul class="scroll__list">
           <li class="scroll__item scroll__item--active">
@@ -36,7 +37,7 @@
        </ul>
       </div>
       
-    <header class="header">
+     <header class="header">
       <div class="container header__container">
         <div class="header__content">
           <a href="#" class="logo">CHO CCO</a>
@@ -98,7 +99,7 @@
       </div>
     </header>
 
-      <section class="promo">
+      <section class="section promo">
        <div class="container promo__container">
          <div class="promo__content">
           <div class="promo__title">
@@ -143,7 +144,7 @@
        </div>
       </section>
 
-     <section class="why" id="slide1">
+     <section class="section why" id="slide1">
         <div class="container why__container">
         <div class="why__content">
          <div class="why__title"> 
@@ -203,7 +204,7 @@
       </div>
       </section>
 
-      <section class="bar" id="slide2">
+      <section class="section bar" id="slide2">
         <div class="container bar__container"> 
           <div class="bar__composition"> 
              <table class="bar__composition-table">
@@ -376,7 +377,7 @@
         </div>
       </section>
 
-      <section class="team" id="slide3">
+      <section class="section team" id="slide3">
         <div class="container team__container">
           <div class="team__title">
             <h2 class="team__heading">команда</h2>
@@ -446,7 +447,7 @@
         </div>
       </section>
 
-    <section class="menu" id="slide4">
+    <section class="section menu" id="slide4">
               <ul class="menu__list">
                 <li class="menu__item active">
                   <a href="#" class="menu__trigger" style="background-image:url(./../img/bg/Milk.png)">
@@ -486,7 +487,7 @@
               </ul>
       </section>
 
-      <section class="reviews" id="slide5">
+      <section class="section reviews" id="slide5">
         <div class="container reviews__container">
         <div class="reviews__title">
           <h2 class="reviews__heading">отзывы</h2>
@@ -579,7 +580,7 @@
       </div>
       </section>
 
-      <section class="presentation" id="slide6">
+      <section class="section presentation" id="slide6">
         <div class="container presentation__container">
           <div class="presentation__title">
             <h2 class="presentation__heading">как мы работаем</h2>
@@ -592,15 +593,17 @@
           </video>
           <button class="video__start video__start--big"></button>
           </div>
+          <div class="player__scale">
           <div id="controls" class="hidden">
-            <a id="playBtn">Play</a>
+            <button id="playBtn" class="play__button"></button>
             <span id="timer">00:00</span>
             <input type="range" step="0.1" min="0" max="1" value="0" id="volume" />
         </div>
         </div>
+        </div>
       </section>
 
-      <section class="form">
+      <section class="section form">
           <div class="container form__container">
             <div class="form__title">
              <h2 class="form__heading">закажите доставку</h2> 
@@ -684,7 +687,7 @@
           </div>
       </section>
       
-      <section class="map__section" id="slide8">
+      <section class="section map__section" id="slide8">
         <div id="map" class="map"> 
         </div>
      <footer class="footer">
@@ -745,13 +748,20 @@
             </div>
        </footer>
       </section>
-
+      </div>
+     
     </div>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=824c60cd-d990-4c22-9498-97fd287d5423&lang=ru_RU"
      type="text/javascript">
     </script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <script src="./JS/owl.carousel.min.js"></script>
+    <script src="./JS/video.js"></script>
+    <script src="./JS/gamburger.js"></script>
+    <script src="./JS/bar.js"></script>
+    <script src="./JS/review.js"></script>
+    <script src="./JS/menu.js"></script>
+    <script src="./JS/map.js"></script>
     <script src="./JS/main.js"></script>
 </body>
 </html>
