@@ -4,10 +4,10 @@ const videoEl = document.getElementsByTagName('video')[0],
    volumeControl = document.getElementById('volume'),
    timePicker = document.getElementById('timer');
 
-videoEl.addEventListener('canplaythrough', function () {
-   vidControls.classList.remove('hidden');
-   videoEl.volume = volumeControl.value;
-}, false);
+//videoEl.addEventListener('canplaythrough', function () {
+//   vidControls.classList.remove('hidden');
+ //  videoEl.volume = volumeControl.value;
+//}, false);
 
 playBtn.addEventListener('click', function () {
     if (videoEl.paused) {  // если видео остановлено, запускаем

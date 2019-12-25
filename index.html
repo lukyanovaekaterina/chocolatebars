@@ -591,13 +591,14 @@
             <source src="./video/videoplayback.ogg" type='video/ogg; codecs="theora, vorbis"'>
             <source src="./video/videoplayback.webm" type='video/webm; codecs="vp8, vorbis"'>
           </video>
-          <button class="video__start video__start--big"></button>
           </div>
           <div class="player__scale">
           <div id="controls" class="hidden">
             <button id="playBtn" class="play__button"></button>
-            <span id="timer">00:00</span>
-            <input type="range" step="0.1" min="0" max="1" value="0" id="volume" />
+            <div class="play__progress"> 
+            <button class="play__scrollbutton" ></button>
+            </div>
+            <input class="play__sound" type="range" step="0.1" min="0" max="1" value="0" id="volume" />
         </div>
         </div>
         </div>
