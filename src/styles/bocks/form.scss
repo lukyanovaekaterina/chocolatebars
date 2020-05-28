@@ -1,0 +1,170 @@
+.form {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background: url(images/img/bg/form.jpg);
+  height: 100vh;
+  position: relative;
+
+  &__elem{
+      display: flex;
+      position: relative;
+      justify-content: center;
+  }
+
+  &__row {
+      display: flex;
+  }
+
+  &__label {
+      margin-left: 1.2rem;
+      width: 100%;
+
+      &-radio {
+          display: flex;
+      }
+
+      &-checkbox {
+          display: flex;
+      }
+
+      &:first-child {
+          margin-left: 0;
+      }
+  }
+
+  &__label-checkbox {
+      margin-top: 1.125rem;
+  }
+
+  &__col {
+      width: 50%;
+      margin-top: 2.875rem;
+      margin-left: 1.25rem;
+
+      &:first-child {
+          margin-left: 0;
+      }
+  }
+
+  &__checkbox {
+      margin-right: 0.625rem;
+  }
+
+  &__textarea {
+      min-height: 7.735rem;
+      resize: none;
+  }
+
+      &__label-title {
+      font-family: "Alegreya Sans";
+      font-size: 1.125rem;
+      font-weight: 500;
+      color: #0f5a47;
+      padding-bottom: 0.5rem;
+      margin-right: 1.25rem;
+  }
+
+     &__input {
+      border: 6px solid transparent;
+      border-radius: 2px;
+      padding: 0.6825rem 1.25rem;
+      margin-bottom: 1.25rem;
+      outline: none;
+      width: 100%;
+
+      &-radio {
+          margin-right: 0.625rem;
+      }
+  }
+
+  &__question {
+      display: flex;
+  }
+
+  &__button {
+      margin-top: 1.25rem;
+  }
+}
+
+.form__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.form__title{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  color: #0f5a47;
+  margin-top: 3rem;
+}
+
+.form__heading{
+  display: flex;
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  height: auto;
+  align-items: flex-end;
+  text-align: center;
+}
+
+.form__button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button__reset{
+  color: #0f5a47;
+  padding-left: 1.625rem;
+}
+
+@media (max-width: 768px) {
+.form{
+    flex-direction: column;
+    align-items: center;
+    &__col{
+        width: 80%;
+    }
+
+    &__elem{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+    }
+
+    &__col{
+        margin: 0;
+    }
+
+    &__row{
+        align-items: center;
+        justify-content: center;
+    }
+    &__label-radio{
+        justify-content: center;
+    }
+
+    &__label-checkbox{
+        align-items: center;
+        justify-content: center;
+    }
+}
+}
+  
+@media (max-width: 480px) {
+    .form{
+        flex-direction: column;
+        align-items: center;
+        &__col{
+            width: 80%;
+        }
+    }
+}

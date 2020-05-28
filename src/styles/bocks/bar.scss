@@ -1,0 +1,183 @@
+.bar{
+  background: url(images/img/bg/bar.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 100vh;
+  justify-content: center;
+
+  &__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1100px;
+  }
+
+&__content{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width:95%;
+  
+}
+
+&__content-menu{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+&__list{
+  padding: 0;
+  width: 90%;
+}
+
+&__list-menu{
+  padding: 0;
+}
+
+
+&__foto{
+  object-fit: cover;
+  width: 23rem;
+  height: 23rem;
+}
+
+&__image{
+  object-fit: cover;
+  width: 22rem;
+  height: 22rem;
+}
+
+&__desc{
+  padding-left: 5rem;
+  width: 48%;
+}
+
+&__composition-button{
+  position: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #00accf;
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 4px;
+  color: #ffffff;
+  z-index: 5;
+}
+
+&__title{
+  padding: 2rem 0 1rem 0;
+}
+
+&__candy{
+  justify-content: center;
+ margin-left: 1.25rem;
+  width: 3.375rem;
+  height: 3.375rem;
+  stroke: #ffffff;
+  fill: #ffffff;
+}
+
+&__candy-title{
+  font-weight: 700;
+  margin-left: 1.5rem;
+}
+
+&__heading{
+  font-size: 2.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  height: auto;
+}
+ &__message{
+   font-weight: 1.125rem;
+   color: #7f7f7f;
+   padding-bottom: 2.75rem;
+ }
+ &__list-composition{
+   padding: 0;
+   width: 90%;
+ }
+
+ &__feature{
+   display: flex;
+   padding-bottom: 2rem;
+ }
+
+ &__ccal{
+   width: 50%;
+   font-weight: 900;
+ }
+
+ &__ccal-title{
+   font-weight: 500;
+ }
+
+ &__heft{
+   font-weight: 900;
+ }
+
+ &__heft-title{
+  font-weight: 500;
+ }
+&__price{
+  display: flex;
+}
+
+&__cost{
+  width: 50%;
+  font-size: 3.75rem;
+  font-weight: 100;
+}
+
+&__composition-image{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+}
+
+.overflow{
+  overflow: hidden;
+
+}
+
+.bar__button_next {
+  left: auto;
+  right: 0px;
+}
+
+@media (max-width: 768px){
+  .bar{
+   
+    &__container{
+      flex-direction: column;
+    }
+    
+    &__composition-button{
+      margin-right: 0.5rem;
+    }
+
+    &__content-menu{
+      flex-direction: column;
+    }
+
+    &__desc{
+      width: 90%;
+      text-align: center;
+      padding: 0;
+    }
+       
+    &__list-menu{
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

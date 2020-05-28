@@ -1,0 +1,161 @@
+.promo {
+background-image: url(images/img/bg/promo.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+position: relative;
+height: 100vh;
+justify-content: center;
+
+&__container{
+  display: flex;
+  align-items: center;
+}
+
+&__content{
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 9.375rem;
+  max-width: 100%;
+  height: auto;
+  width: 54rem;
+}
+
+&__message{
+  font-size: 1.125rem;
+  font-weight: 100;
+  font-stretch: semi-condensed;
+  width: 80%;
+}
+
+&__title{
+  flex-direction: column;
+  height: auto;
+  color: #fff;
+  padding-bottom: 3rem;
+}
+
+&__heading{
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  height: auto;
+}
+
+&__foto{
+  display: flex;
+ position: absolute;
+  object-fit: cover;
+  flex-direction: column;
+ right:  1.125rem;
+ margin-bottom: -20px;
+}
+
+&__img2{
+  position: absolute;
+  top: 18rem;
+  right: 0;
+}
+}
+
+
+@media (max-width: 768px) {
+  .promo__container{
+    display: flex;
+    flex-direction: column-reverse;
+   
+  }
+  .promo{
+    &__content{
+      width: 54rem;
+      margin-top: 0;
+      align-items: center;
+      margin: 0 auto;
+    }
+
+    &__foto{
+      left: 20%;
+      top: 10%;
+      width: 70%;
+    }
+
+&__img1{
+  position: absolute;
+}
+&__img2{
+  position: relative;
+  top: 40rem;
+}
+
+&__title{
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+&__message{
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+  }  
+.form__buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+}
+
+@media (max-width: 480px) {
+  .promo__container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .promo{
+    &__content{
+      margin-top: 0px;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      padding-top: 1rem;
+    }
+    &__title{
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__heading{
+      text-align: center;
+    }
+
+    &__message{
+      text-align: center;
+      justify-content: center;
+      margin:0 auto;
+    }
+
+    &__foto{
+      height: 50%;
+      left:25%;
+      right: 23%;
+      width: 100%;
+    }
+&__img1{
+  max-height: 100%;
+  top:1.5rem;
+}
+
+&__img2{
+  height: 60%;
+  top: 9.5rem;
+  right: auto;
+}
+  }  
+.form__buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
