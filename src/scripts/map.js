@@ -22,7 +22,7 @@ ymaps.ready(init)
           
           {
             iconLayout: "default#image",
-            iconImageHref: "src/images/img/bg/1.png",
+            iconImageHref: "images/img/bg/1.png",
             iconImageSize: [60, 60],
           }
           );
@@ -37,7 +37,7 @@ ymaps.ready(init)
         
         {
           iconLayout: "default#image",
-          iconImageHref: "src/images/img/bg/1.png",
+          iconImageHref: "images/img/bg/1.png",
           iconImageSize: [60, 60],
         }
         );
@@ -52,7 +52,7 @@ ymaps.ready(init)
       
       {
         iconLayout: "default#image",
-        iconImageHref: "src/images/img/bg/1.png",
+        iconImageHref: "images/img/bg/1.png",
         iconImageSize: [60, 60],
       }
       );
@@ -67,7 +67,7 @@ ymaps.ready(init)
     
     {
       iconLayout: "default#image",
-      iconImageHref: "src/images/img/bg/1.png",
+      iconImageHref: "images/img/bg/1.png",
       iconImageSize: [60, 60],
     }
     );
