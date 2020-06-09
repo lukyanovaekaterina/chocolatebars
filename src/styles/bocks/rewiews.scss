@@ -74,7 +74,6 @@
   .reviews{
     &__item{
       display: none;
-
     }
   
     &__desc{
@@ -102,4 +101,15 @@
   }
 }
 }
+
+@media (max-width: 480px){
+  .reviews__list{
+    padding-left: 0;
+  }
+
+  .reviews__icon{
+    padding-left: 0;
+  }
+}
+
 

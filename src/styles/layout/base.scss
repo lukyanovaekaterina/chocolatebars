@@ -21,7 +21,7 @@ h6 {
   padding: 0; }
 
 .container {
-  width: 58.75rem;
+  /*width: 58.75rem;*/
   margin: 0 auto;
   height: 100%;
  }
@@ -66,52 +66,9 @@ li {
   .team__item {
     width: calc(100% / 2 - 20px);
   }
-  
-  .menu-gamburger__content{
-    display: flex;
-    flex-direction: column;
-   
-  }
-  .menu-gamburger{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .gamburger__icon:hover .gamburger__list{
-    opacity: 1;
-  }
-   .gamburger__icon{
-     stroke: white;
-     fill: white;
-     height: 1.625rem;
-     width: 1.625rem; 
-   }
-  
-   .gamburger__list{
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-      background: #fff;
-      padding: 0px;
-      width: 100%;
-      opacity: 0;
-      transition: opacity .4s;
-   }
-   .gamburger__list:before{
-  content: "";
-   display: block;
-   left: 0;
-   right: 0;
-   position: absolute;
-   }
-   .contacts {
-    display: none;
-  }
 }
 
 @media (max-width: 480px) {
-  html {font-size: 11px;}
-  /*.container {max-width: 300px;}*/
+  .container {width: 40rem;}
   .map__container {width: 100vw;}
 }
