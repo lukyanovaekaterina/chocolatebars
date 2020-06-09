@@ -41,7 +41,6 @@
   padding: 0;
 }
 
-
 &__foto{
   object-fit: cover;
   width: 23rem;
@@ -155,6 +154,10 @@
 
 @media (max-width: 768px){
   .bar{
+
+    &__content{
+      width: 1200px;
+    }
    
     &__container{
       flex-direction: column;
@@ -179,5 +182,36 @@
       justify-content: center;
       align-items: center;
     }
+  }
+}
+
+@media (max-width: 480px){
+  .bar__content{
+    width: 95%;
+    height: 88vh;
+  }
+
+  .bar__content-menu{
+    height: 90vh;
+  }
+
+  .bar__desc{
+    height: 40%;
+  }
+
+  .bar__message{
+    font-size: 0.8rem;
+  }
+
+  .bar__heading{
+    font-size: 1.5rem;
+  }
+
+  .bar__foto{
+    height: 40%;
+  }
+
+  .owl-item{
+    width: 80%;
   }
 }

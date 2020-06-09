@@ -21,7 +21,7 @@ h6 {
   padding: 0; }
 
 .container {
-  /*width: 58.75rem;*/
+width: 58.75rem;
   margin: 0 auto;
   height: 100%;
  }
@@ -60,8 +60,9 @@ li {
 }
 
 @media (max-width: 768px) {
-  html {font-size: 15px;}
-  .container {width: 80rem;}
+  .container {width: 50rem;
+    max-width: 95%;
+  }
   .map__container {width: 100%}
   .team__item {
     width: calc(100% / 2 - 20px);

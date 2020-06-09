@@ -1,5 +1,9 @@
 .bar__composition{
   margin-left: 11rem;
+
+  @media (max-width: 768px){
+    margin-left: 0px;
+  }
 }
 
 

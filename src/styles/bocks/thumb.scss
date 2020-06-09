@@ -24,6 +24,16 @@ padding-top: 5rem;
 
 @media (max-width: 768px) {
   .thumb__list{
-    padding-top: 4rem;
+    display: flex;
+    align-items: center;
+    width: 34.81rem;
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 480px){
+  .thumb__list{
+  width: 20rem;
+  font-size: 0.8rem;
   }
 }
