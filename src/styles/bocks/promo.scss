@@ -17,12 +17,10 @@ justify-content: center;
   justify-content: flex-start;
   padding-top: 9.375rem;
   max-width: 100%;
-  height: auto;
- width: 54rem;
 }
 
 &__message{
-  font-size: 1.125rem;
+  font-size: 21px;
   font-weight: 100;
   font-stretch: semi-condensed;
   width: 80%;
@@ -36,8 +34,9 @@ justify-content: center;
 }
 
 &__heading{
-  font-size: 3rem;
-  font-weight: 600;
+  font-size: 3.75rem;
+  font-weight: 700;
+  line-height: 1;
   text-transform: uppercase;
   height: auto;
 }
@@ -61,40 +60,45 @@ justify-content: center;
 
 @media (max-width: 768px) {
   .promo{
-
+    height: 100%;
+    
     &__content{
       display: flex;
-      margin-top: 700px;
+      margin-top: 480px;
       align-items: center;
+      padding-top: 0;
     }
 
     &__foto{
-      left: 20%;
-      top: 2%;
+      left: 15%;
+      top: 8%;
       width: 70%;
       height: 50%;
+      height: 419px;
     }
 
 &__img1{
   position: absolute;
-  height: 28rem;
+  height: 24rem;
 }
 &__img2{
   position: relative;
   top: 36%;
   right: 9%;
-  width: 30rem;
+  width: 247px;
+  height: 265px;
 }
 
 &__title{
   text-align: center;
-  width: 80%;
+  /*width: 80%;*/
   margin: 0 auto;
+  padding-bottom: 35px;
 }
 
 &__message{
   text-align: center;
-  width: 70%;
+  width: 338px;
   margin: 0 auto;
 }
   }
@@ -108,54 +112,38 @@ justify-content: center;
 
 
 @media (max-width: 480px) {
-  .promo__container{
-    display: flex;
-    flex-direction: column-reverse;
-  }
   .promo{
-    &__content{
-      margin-top: 0px;
-    }
-
-    &__title{
-      justify-content: center;
-      align-items: center;
-    }
-
     &__heading{
-      text-align: center;
-      font-size: 1.8rem;
+    font-family: AlegreyaSans;
+    font-weight: bold;
+    font-size: 2rem;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.87;
+    }
+    &__img1{
+      width: 19.8125rem;
+      height: 20.625rem;
+      right: 1%;
+    }
+    &__img2{
+      width: 12.125rem;
+      height: 13rem;
+      left: 20%;
+      top: 40%;
+    }
+
+    &__content{
+      padding: 0;
+      margin-top: 360px;
     }
 
     &__message{
-      text-align: center;
-      font-size: 1rem;
-      justify-content: center;
+      font-family: AlegreyaSans;
+      font-size: 0.75rem;
     }
-
-    &__foto{
-      top: 1%;
-      right: 200px;
-      height: 20rem;
-
+    &__title{
+      padding-bottom: 25px;
     }
-&__img1{
-  display: flex;
-  align-items: flex-start;
-  max-height: 100%;
-}
-
-&__img2{
-  height: 15rem;
-  width: 17rem;
-  left: 9%;
-  top:40%;
-}
-
-  }  
-.form__buttons{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  }
 }

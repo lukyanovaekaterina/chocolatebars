@@ -72,6 +72,7 @@
 
 @media (max-width: 768px){
   .reviews{
+      height: 100%;    
     &__item{
       display: none;
     }
@@ -103,13 +104,7 @@
 }
 
 @media (max-width: 480px){
-  .reviews__list{
-    padding-left: 0;
-  }
-
-  .reviews__icon{
-    padding-left: 0;
-  }
+  
 }
 
 

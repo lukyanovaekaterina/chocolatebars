@@ -12,13 +12,14 @@ padding-top: 5rem;
   color: #ffffff;
   justify-content: space-around;
   font-weight: 200;
+  font-size: 1.25rem;
 }
 
 .promo__icon{
   padding-right: 0.625rem;
   fill: none;
   stroke: #b0f7ff;
-  width: 3.75rem;
+  width: 3.125rem;
   height: 2.5rem;
 }
 
@@ -26,14 +27,13 @@ padding-top: 5rem;
   .thumb__list{
     display: flex;
     align-items: center;
-    width: 34.81rem;
     padding-top: 1rem;
   }
 }
 
 @media (max-width: 480px){
   .thumb__list{
-  width: 20rem;
-  font-size: 0.8rem;
+    width: 90vw;
   }
+
 }

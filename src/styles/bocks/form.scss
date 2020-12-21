@@ -129,6 +129,7 @@
 .form{
     flex-direction: column;
     align-items: center;
+    height: 100%;
     &__col{
         width: 80%;
     }
@@ -160,11 +161,5 @@
 }
   
 @media (max-width: 480px) {
-    .form{
-        flex-direction: column;
-        align-items: center;
-        &__col{
-            width: 80%;
-        }
-    }
+    
 }

@@ -5,6 +5,8 @@
   background-position: center center;
   position: relative;
   height: 100vh;
+  display: flex;
+  align-items: center; 
   justify-content: center;
 
   &__container{
@@ -154,6 +156,7 @@
 
 @media (max-width: 768px){
   .bar{
+    height: 100%;
 
     &__content{
       width: 1200px;
@@ -161,6 +164,10 @@
    
     &__container{
       flex-direction: column;
+    }
+
+    &__composition{
+      margin-bottom: -50px;
     }
     
     &__composition-button{
@@ -172,46 +179,22 @@
     }
 
     &__desc{
-      width: 90%;
+      /*width: 90%;*/
       text-align: center;
       padding: 0;
     }
-       
+
+  &__list-composition{
+      display: flex;
+      flex-direction: column;
+      margin-left: 23%;
+      width: 55%;
+    }
+
     &__list-menu{
       margin: 0 auto;
       justify-content: center;
       align-items: center;
     }
-  }
-}
-
-@media (max-width: 480px){
-  .bar__content{
-    width: 95%;
-    height: 88vh;
-  }
-
-  .bar__content-menu{
-    height: 90vh;
-  }
-
-  .bar__desc{
-    height: 40%;
-  }
-
-  .bar__message{
-    font-size: 0.8rem;
-  }
-
-  .bar__heading{
-    font-size: 1.5rem;
-  }
-
-  .bar__foto{
-    height: 40%;
-  }
-
-  .owl-item{
-    width: 80%;
   }
 }

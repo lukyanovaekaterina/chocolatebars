@@ -3,8 +3,11 @@
   background-repeat: no-repeat;
  background-size: cover;
  background-position: center center;
-  height: 100vh;
   position: relative;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 
 .why__container{
@@ -55,6 +58,9 @@
 }
 
 @media (max-width: 768px){
+  .why{
+    height: 100%;
+  }
   .why__content{
     justify-content: center;
     width: 56%;
@@ -65,11 +71,12 @@
 }
 
 @media (max-width: 480px){
-  .why__content{
-    justify-content: center;
-    width: 100%;
-  }
-  .why__title{
-    width: auto;
-  }
+.why{
+&__content{
+  width: 90vw;
+}
+&__heading{
+  font-size: 2rem;
+}
+}
 }

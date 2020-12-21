@@ -21,9 +21,12 @@ h6 {
   padding: 0; }
 
 .container {
-width: 58.75rem;
+  width: 58.75rem;
   margin: 0 auto;
-  height: 100%;
+ }
+
+ .section{
+   height: 650px;
  }
 
 * {
@@ -51,25 +54,34 @@ li {
 .wrapper{
   overflow: hidden;
   width: 100%;
+  min-height: 100%;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .maincontent{
-  height: 100%;
+  flex: 1;
   transition: transform 1s;
 }
 
 @media (max-width: 768px) {
+  .maincontent{font-size: 16px;}
   .container {width: 50rem;
-    max-width: 95%;
+    max-width: 95vw;
+    padding: 56px 0;
   }
   .map__container {width: 100%}
   .team__item {
     width: calc(100% / 2 - 20px);
   }
+.section{
+  height: 100%;
+}
 }
 
 @media (max-width: 480px) {
+  .maincontent {font-size: 13px;}
   .container {width: 40rem;}
   .map__container {width: 100vw;}
 }

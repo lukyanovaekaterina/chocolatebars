@@ -3,8 +3,11 @@
   background-repeat: no-repeat;
   background-size: 6.875rem 6.875rem, cover;
   background-position:left bottom, center center;
-  /*height: 100vh;*/
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 
 &__container{
   display: flex;
@@ -14,7 +17,7 @@
 }
 
 &__title{
-  margin-top: 176px;
+  /*margin-top: 176px;*/
 margin-bottom: 60px;
 }
 
@@ -60,7 +63,6 @@ margin-bottom: 60px;
 opacity: 1;
 }
 
-
 .accordion__label-team{
 display: flex;
 justify-content: center;
@@ -92,16 +94,25 @@ color:#323232;
 }
 
 @media (max-width: 768px){
+  .team{
+    height: 100%;
+  }
+  .team__list{
+    :first-child{
+      padding-left: 1rem;
+    }
+  }
   .team__item {
     width: calc(100% / 2 - 3.5rem);
   }
-  
+  .team__pic{
+    width: calc( 100% - 1rem);
+  }
 }
 
 @media (max-width: 480px){
   .team__item {
     width: calc(100% / 2 - 10px);
-
   }
   .team__pic{
     width: calc( 100% - 1.25rem);

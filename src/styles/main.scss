@@ -1,9 +1,3 @@
-// blocks
-@import "bocks/*.scss";
-@import "owl/owl.carousel.scss";
-@import "owl/owl.theme.default.scss";
-
-
 //colors
 $blue: #61c4d9;
 $green: #0f5a47;
@@ -15,3 +9,8 @@ $white: #fff;
 @import "layout/base.scss";
 @import "layout/font.scss";
 @import "layout/mixin.scss";
+
+// blocks
+@import "bocks/*.scss";
+@import "owl/owl.carousel.scss";
+@import "owl/owl.theme.default.scss";
